@@ -22,7 +22,8 @@ class TestProject(unittest.TestCase):
             root = Path(tmp)
             shutil.copy(ROOT / "Makefile", root / "Makefile")
             (root / "tools").mkdir()
-            names = ("src/main/START.PAS", "src/main/HOLIDAY.DPR", "rebrew-functions.toml", "STATUS.md")
+            names = ("src/main/START.PAS", "src/main/HOLIDAY.DPR", "src/main/forms/TStartform.DFM",
+                     "src/main/forms/layouts.json", "rebrew-functions.toml", "STATUS.md")
             for name in (*names, "src/main/DATAVAL.PAS", "build/cache.bin", ".scratch/probe.pas"):
                 path = root / name
                 path.parent.mkdir(parents=True, exist_ok=True)
@@ -48,10 +49,15 @@ class TestProject(unittest.TestCase):
             with self.subTest(va=hex(va)):
                 path = ROOT / row["file"]
                 self.assertTrue(path.is_file())
+                self.assertIn(f"{{ ADDRESS: {module} 0x{va:08x} }}", path.read_text())
                 self.assertRegex(path.read_text(), r"(?im)^\s*(?:procedure|function|constructor|destructor)\s+" + re.escape(row["symbol"]) + r"\b")
         self.assertEqual(tomllib.loads((ROOT / "rebrew-functions.toml").read_text())["format"], 3)
         self.assertEqual(tomllib.loads((ROOT / "rebrew-data.toml").read_text())["format"], 2)
         load_data_metadata(ROOT)
+        segments = json.loads((ROOT / "layout/main/segments.json").read_text())
+        self.assertEqual(segments["index_base"], 0)
+        self.assertEqual([s["index"] for s in segments["segments"]], list(range(35)))
+        self.assertEqual([s["number"] for s in segments["segments"]], list(range(1, 36)))
 
     def test_status_matches_sources_and_does_not_claim_candidates_are_exact(self):
         data = gen_status.report()
@@ -68,6 +74,9 @@ class TestProject(unittest.TestCase):
     def test_git_keeps_code_but_ignores_extracted_inputs(self):
         tracked = set(subprocess.check_output(["git", "ls-files"], cwd=ROOT, text=True).splitlines())
         for path in gen_status.source_paths():
+            self.assertIn(path.relative_to(ROOT).as_posix(), tracked)
+        self.assertIn("src/main/forms/layouts.json", tracked)
+        for path in (ROOT / "src/main/forms").glob("*.DFM"):
             self.assertIn(path.relative_to(ROOT).as_posix(), tracked)
         forbidden = {"src/main/DATAVAL.PAS", "src/main/POOLS.PAS", "src/main/TABLES.PAS", "src/main/HOLIDAY.RES", "original/holiday.exe"}
         self.assertFalse(tracked & forbidden)

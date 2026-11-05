@@ -103,6 +103,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000a0997 }
 function Proc10_0997(R: PRec10; X: Byte): Byte;
 begin
   case R^.K of
@@ -232,6 +233,7 @@ end;
 
 
 {$F-}
+{ ADDRESS: MAIN 0x000a21b7 }
 function Proc10_21B7(A, B, C, D, E, F: Integer): Boolean;
 begin
   Proc10_21B7 := (A <= $13) and (B >= 0)
@@ -241,6 +243,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000a341c }
 function Proc10_341C(Cursor: PPChar10): PChar;
 var
   Start, Walk: PChar;
@@ -298,146 +301,181 @@ begin
     StubE68(0, $13, -N);
 end;
 
+{ ADDRESS: MAIN 0x000a0002 }
 procedure Proc10_0002;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a0074 }
 procedure Proc10_0074;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a0144 }
 procedure Proc10_0144;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a075e }
 procedure Proc10_075E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a0e68 }
 procedure Proc10_0E68(A0, A1, A2: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a21f9 }
 procedure Proc10_21F9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a245b }
 procedure Proc10_245B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a264d }
 procedure Proc10_264D(A0, A1, A2, A3: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a2697 }
 procedure Proc10_2697;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a26ae }
 procedure Proc10_26AE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a26c8 }
 procedure Proc10_26C8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a2700 }
 procedure Proc10_2700;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a271b }
 procedure Proc10_271B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a2d4c }
 procedure Proc10_2D4C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a2df8 }
 procedure Proc10_2DF8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a2eaa }
 procedure Proc10_2EAA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a313a }
 procedure Proc10_313A;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000a34a9 }
 procedure Proc10_34A9;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000a34d6 }
 procedure Proc10_34D6;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000a3529 }
 procedure Proc10_3529;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a35a0 }
 procedure Proc10_35A0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a35e2 }
 procedure Proc10_35E2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3644 }
 procedure Proc10_3644;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3682 }
 procedure Proc10_3682;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a36f3 }
 procedure Proc10_36F3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a383c }
 procedure Proc10_383C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3863 }
 procedure Proc10_3863;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a38b1 }
 procedure Proc10_38B1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3b4e }
 procedure Proc10_3B4E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3b8d }
 procedure Proc10_3B8D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3d7b }
 procedure Proc10_3D7B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3dd3 }
 procedure Proc10_3DD3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3e49 }
 procedure Proc10_3E49;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3e6b }
 procedure Proc10_3E6B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000a3e7b }
 procedure Proc10_3E7B;
 begin
 end;

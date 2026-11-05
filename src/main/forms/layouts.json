@@ -1,0 +1,4180 @@
+{
+  "format": 1,
+  "reference_sha256": "dfdfe07f7cc34cc1717c1a1419f2ab773a13d074e8bbcb0d33659c3e6575dd07",
+  "omitted_binary_properties": [
+    {
+      "form": "THauptschirm",
+      "component": "Hauptschirm",
+      "property": "Icon.Data",
+      "bytes": 766
+    }
+  ],
+  "forms": [
+    {
+      "class": "THintergrund",
+      "name": "Hintergrund",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 415
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 98
+        },
+        {
+          "name": "Cursor",
+          "wire_type": 7,
+          "value": "crNoDrop"
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Holiday Island"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 286
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 379
+        },
+        {
+          "name": "Color",
+          "wire_type": 7,
+          "value": "clBlack"
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -7
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "Visible",
+          "wire_type": 9,
+          "value": true
+        },
+        {
+          "name": "WindowState",
+          "wire_type": 7,
+          "value": "wsMaximized"
+        },
+        {
+          "name": "OnActivate",
+          "wire_type": 7,
+          "value": "FormActivate"
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "OnCreate",
+          "wire_type": 7,
+          "value": "FormCreate"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "backgroundimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 135
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 98
+            },
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnClick",
+              "wire_type": 7,
+              "value": "backgroundimageClick"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "FilmMediaPlayer",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 5
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 156
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 253
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "AutoEnable",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Display",
+              "wire_type": 7,
+              "value": "FilmPanel"
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 0
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "MusikMediaPlayer",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 6
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 124
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 253
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "AutoEnable",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 1
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TPanel",
+          "name": "FilmPanel",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 56
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 28
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 281
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 221
+            },
+            {
+              "name": "BevelOuter",
+              "wire_type": 7,
+              "value": "bvNone"
+            },
+            {
+              "name": "Color",
+              "wire_type": 7,
+              "value": "clBlack"
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 2
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnClick",
+              "wire_type": 7,
+              "value": "FilmPanelClick"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "Timer1",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 3,
+              "value": 2000
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "Timer1Timer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 192
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TBaumenue",
+      "name": "Baumenue",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 263
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 122
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Baumenue"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 190
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 410
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnCreate",
+          "wire_type": 7,
+          "value": "FormCreate"
+        },
+        {
+          "name": "OnDestroy",
+          "wire_type": 7,
+          "value": "FormDestroy"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Baumenuebild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 410
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 190
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BaumenuebildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "BaumenuebildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BaumenuebildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "THauptschirm",
+      "name": "Hauptschirm",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 2,
+          "value": 99
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 107
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Hauptschirm"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 345
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 643
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -14
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "Scaled",
+          "wire_type": 8,
+          "value": false
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "NSScrollbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 627
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": -13
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 15
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 364
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Kleinbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 620
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 21
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 17
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "KleinbildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "KleinbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "CloseBild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 17
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 21
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "CloseBildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "CloseBildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Hauptbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": -5
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 56
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 624
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 404
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "HauptbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "HauptbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "HauptbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Ueberschriftbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 608
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 16
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "ButtonImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": -1
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 34
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 640
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 25
+            },
+            {
+              "name": "OnClick",
+              "wire_type": 7,
+              "value": "ButtonImageClick"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "ButtonImageMouseMove"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "WOScrollbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 216
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 327
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 367
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 16
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "WOScrollbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "WOScrollbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "WOScrollbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "InfoImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 18
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 640
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 18
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Statusimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 1
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 464
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 235
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 16
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "eckimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 626
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 464
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 23
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 16
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "eckimageMouseDown"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "AnimationsTimer",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 2,
+              "value": 100
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "AnimationsTimerTimer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 462
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 52
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TAuktionsform",
+      "name": "Auktionsform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 101
+        },
+        {
+          "name": "BorderIcons",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Auktionsform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Enabled",
+          "wire_type": 8,
+          "value": false
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "AuktionsImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 2
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 66
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 21
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "leiste",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 201
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 41
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 102
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "leisteMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "leisteMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "leisteMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "knopfimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 147
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 207
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 118
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 49
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "knopfimageMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "knopfimageMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "Timer1",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 3,
+              "value": 3000
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "Timer1Timer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 56
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 52
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "Timer2",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "Timer2Timer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 91
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 53
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "Timer3",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 2,
+              "value": 100
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "Timer3Timer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 128
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 51
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TSabowin",
+      "name": "Sabowin",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 300
+        },
+        {
+          "name": "Top",
+          "wire_type": 3,
+          "value": 167
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Sabotage"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 250
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 392
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnHide",
+          "wire_type": 7,
+          "value": "FormHide"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Saboimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 411
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 242
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "SaboimageMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "SaboimageMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "SaboimageMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TInfobox2",
+      "name": "Infobox2",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 99
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Infobox2"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "Position",
+          "wire_type": 7,
+          "value": "poDefault"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Infoimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 393
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 241
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "InfoimageMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "InfoimageMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TDateimenue",
+      "name": "Dateimenue",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 305
+        },
+        {
+          "name": "Top",
+          "wire_type": 3,
+          "value": 139
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Dateimenue"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 297
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnHide",
+          "wire_type": 7,
+          "value": "FormHide"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Dateimenuebild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 297
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 200
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "DateimenuebildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "DateimenuebildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "DateimenuebildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TEndeform",
+      "name": "Endeform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Endeform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnHide",
+          "wire_type": 7,
+          "value": "FormHide"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "EndeImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 72
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 48
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 261
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 125
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "EndeImageMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "EndeImageMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "EndeImageMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TKompassform",
+      "name": "Kompassform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 102
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Kompassform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 143
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 153
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 109
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 109
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "BildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TDummyForm",
+      "name": "DummyForm",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 431
+        },
+        {
+          "name": "Top",
+          "wire_type": 3,
+          "value": 134
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "DummyForm"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 194
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 253
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -16
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 120
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 20
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 251
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 191
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TFernseher",
+      "name": "Fernseher",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 396
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 46
+        },
+        {
+          "name": "BorderIcons",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Fernseher"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 372
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 367
+        },
+        {
+          "name": "Ctl3D",
+          "wire_type": 8,
+          "value": false
+        },
+        {
+          "name": "Color",
+          "wire_type": 7,
+          "value": "clBtnFace"
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnHide",
+          "wire_type": 7,
+          "value": "FormHide"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "tvimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 352
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 319
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "tvimageMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "tvimageMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "tvleiimage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 216
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 24
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 75
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "tvleiimageMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "tvleiimageMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "tvleiimageMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "MediaPlayer1",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 312
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 29
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 29
+            },
+            {
+              "name": "VisibleButtons",
+              "wire_type": 11,
+              "value": [
+                "btPlay"
+              ]
+            },
+            {
+              "name": "Display",
+              "wire_type": 7,
+              "value": "Panel1"
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 0
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TPanel",
+          "name": "Panel1",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 72
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 136
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 125
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 81
+            },
+            {
+              "name": "BevelOuter",
+              "wire_type": 7,
+              "value": "bvNone"
+            },
+            {
+              "name": "Caption",
+              "wire_type": 6,
+              "value": " "
+            },
+            {
+              "name": "Color",
+              "wire_type": 7,
+              "value": "clBlack"
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 1
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "MediaPlayer2",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 312
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 24
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 29
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 25
+            },
+            {
+              "name": "VisibleButtons",
+              "wire_type": 11,
+              "value": [
+                "btPlay"
+              ]
+            },
+            {
+              "name": "DeviceType",
+              "wire_type": 7,
+              "value": "dtWaveAudio"
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 2
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TStartform",
+      "name": "Startform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 154
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 33
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Start"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 352
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 424
+        },
+        {
+          "name": "Color",
+          "wire_type": 7,
+          "value": "clSilver"
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 425
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 353
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "BildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TLadenForm",
+      "name": "LadenForm",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 98
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "LadenForm"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 84
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 44
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 277
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 177
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TOptionenform",
+      "name": "Optionenform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 2,
+          "value": 68
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 109
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Optionen"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 261
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 407
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "OnHide",
+          "wire_type": 7,
+          "value": "FormHide"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "OnShow",
+          "wire_type": 7,
+          "value": "FormShow"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 353
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 233
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "bildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "bildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "bildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "Thighscoreform",
+      "name": "highscoreform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 2,
+          "value": 124
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 59
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "highscoreform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 2,
+          "value": 31
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 2,
+          "value": 106
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 17
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 17
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "bildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "bildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TSchlussform",
+      "name": "Schlussform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 223
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 74
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Schlu\u00dfform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 2,
+          "value": 78
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 285
+        },
+        {
+          "name": "Color",
+          "wire_type": 7,
+          "value": "clBlack"
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 9
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Image1",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 83
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 6
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 78
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 8
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TPanel",
+          "name": "Panel1",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 28
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 21
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "BevelOuter",
+              "wire_type": 7,
+              "value": "bvNone"
+            },
+            {
+              "name": "Caption",
+              "wire_type": 6,
+              "value": "Panel1"
+            },
+            {
+              "name": "Color",
+              "wire_type": 7,
+              "value": "clBlack"
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 0
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnClick",
+              "wire_type": 7,
+              "value": "Panel1Click"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "Filmplayer",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 44
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 253
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 21
+            },
+            {
+              "name": "Display",
+              "wire_type": 7,
+              "value": "Panel1"
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 1
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TMediaPlayer",
+          "name": "MusikPlayer",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 44
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 40
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 253
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 20
+            },
+            {
+              "name": "Visible",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "TabOrder",
+              "wire_type": 2,
+              "value": 2
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "Timer1",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "Timer1Timer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 16
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 44
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TGeldmenuform",
+      "name": "Geldmenuform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Geldmenuform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "UeberschriftImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 409
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 21
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "UeberschriftImageMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "UeberschriftImageMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "UeberschriftImageMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "BildImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 12
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 36
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 409
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 189
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildImageMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildImageMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "MenuImage",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 240
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 413
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 25
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "MenuImageMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "MenuImageMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "MenuImageMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "Tumenuform",
+      "name": "umenuform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 214
+        },
+        {
+          "name": "Top",
+          "wire_type": 3,
+          "value": 135
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "umenuform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 160
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 32
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 121
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 113
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "bildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "bildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "bildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TWasNunForm",
+      "name": "WasNunForm",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 102
+        },
+        {
+          "name": "Cursor",
+          "wire_type": 7,
+          "value": "crNoDrop"
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "WasNunForm"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 217
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 315
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 32
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 24
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 241
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 165
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TCreditform",
+      "name": "Creditform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 112
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Creditform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 214
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 342
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -14
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 19
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 308
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 174
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "BildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "BildMouseUp"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TPauseform",
+      "name": "Pauseform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 95
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Pauseform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "Position",
+          "wire_type": 7,
+          "value": "poDefault"
+        },
+        {
+          "name": "OnClose",
+          "wire_type": 7,
+          "value": "FormClose"
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Pausebild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 26
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 29
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 362
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 199
+            },
+            {
+              "name": "OnClick",
+              "wire_type": 7,
+              "value": "PausebildClick"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TUebersichtsmap2",
+      "name": "Uebersichtsmap2",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 2,
+          "value": 24
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 112
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Uebersichtsmap2"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 273
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 427
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "OnKeyDown",
+          "wire_type": 7,
+          "value": "FormKeyDown"
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Ueberschriftbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 8
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 393
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "UeberschriftbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Umschaltbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 412
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "UmschaltbildMouseDown"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "UmschaltbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "NSScrollbild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 412
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 24
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 13
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 201
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "NSScrollbildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "Menubild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 232
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 417
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 37
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "MenubildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "MenubildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "MenubildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TImage",
+          "name": "MapBild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 4
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 24
+            },
+            {
+              "name": "Width",
+              "wire_type": 3,
+              "value": 401
+            },
+            {
+              "name": "Height",
+              "wire_type": 3,
+              "value": 201
+            },
+            {
+              "name": "OnMouseDown",
+              "wire_type": 7,
+              "value": "MapBildMouseDown"
+            },
+            {
+              "name": "OnMouseMove",
+              "wire_type": 7,
+              "value": "MapBildMouseMove"
+            },
+            {
+              "name": "OnMouseUp",
+              "wire_type": 7,
+              "value": "MapBildMouseUp"
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "NSScrolltimer",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 2,
+              "value": 25
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "NSScrolltimerTimer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 396
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 104
+            }
+          ],
+          "children": []
+        },
+        {
+          "class": "TTimer",
+          "name": "WOScrolltimer",
+          "properties": [
+            {
+              "name": "Enabled",
+              "wire_type": 8,
+              "value": false
+            },
+            {
+              "name": "Interval",
+              "wire_type": 2,
+              "value": 25
+            },
+            {
+              "name": "OnTimer",
+              "wire_type": 7,
+              "value": "WOScrolltimerTimer"
+            },
+            {
+              "name": "Left",
+              "wire_type": 3,
+              "value": 192
+            },
+            {
+              "name": "Top",
+              "wire_type": 3,
+              "value": 220
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "THelpform",
+      "name": "Helpform",
+      "properties": [
+        {
+          "name": "Left",
+          "wire_type": 3,
+          "value": 200
+        },
+        {
+          "name": "Top",
+          "wire_type": 2,
+          "value": 99
+        },
+        {
+          "name": "BorderStyle",
+          "wire_type": 7,
+          "value": "bsNone"
+        },
+        {
+          "name": "Caption",
+          "wire_type": 6,
+          "value": "Helpform"
+        },
+        {
+          "name": "ClientHeight",
+          "wire_type": 3,
+          "value": 188
+        },
+        {
+          "name": "ClientWidth",
+          "wire_type": 3,
+          "value": 197
+        },
+        {
+          "name": "Enabled",
+          "wire_type": 8,
+          "value": false
+        },
+        {
+          "name": "Font.Color",
+          "wire_type": 7,
+          "value": "clWindowText"
+        },
+        {
+          "name": "Font.Height",
+          "wire_type": 2,
+          "value": -13
+        },
+        {
+          "name": "Font.Name",
+          "wire_type": 6,
+          "value": "System"
+        },
+        {
+          "name": "Font.Style",
+          "wire_type": 11,
+          "value": []
+        },
+        {
+          "name": "FormStyle",
+          "wire_type": 7,
+          "value": "fsStayOnTop"
+        },
+        {
+          "name": "PixelsPerInch",
+          "wire_type": 2,
+          "value": 96
+        },
+        {
+          "name": "TextHeight",
+          "wire_type": 2,
+          "value": 16
+        }
+      ],
+      "children": [
+        {
+          "class": "TImage",
+          "name": "Bild",
+          "properties": [
+            {
+              "name": "Left",
+              "wire_type": 2,
+              "value": 32
+            },
+            {
+              "name": "Top",
+              "wire_type": 2,
+              "value": 40
+            },
+            {
+              "name": "Width",
+              "wire_type": 2,
+              "value": 105
+            },
+            {
+              "name": "Height",
+              "wire_type": 2,
+              "value": 105
+            }
+          ],
+          "children": []
+        }
+      ]
+    }
+  ]
+}

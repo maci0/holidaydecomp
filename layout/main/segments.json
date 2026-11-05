@@ -1,11 +1,13 @@
 {
   "target": "main",
   "format": "ne",
+  "index_base": 0,
   "reference_sha256": "dfdfe07f7cc34cc1717c1a1419f2ab773a13d074e8bbcb0d33659c3e6575dd07",
   "address_encoding": "zero-based segment * 0x10000 + offset",
   "segments": [
     {
-      "index": 1,
+      "index": 0,
+      "number": 1,
       "file_offset": 184656,
       "bytes": 16333,
       "min_allocation": 16334,
@@ -14,7 +16,8 @@
       "on_disk": true
     },
     {
-      "index": 2,
+      "index": 1,
+      "number": 2,
       "file_offset": 201280,
       "bytes": 22644,
       "min_allocation": 22644,
@@ -23,7 +26,8 @@
       "on_disk": true
     },
     {
-      "index": 3,
+      "index": 2,
+      "number": 3,
       "file_offset": 224064,
       "bytes": 16195,
       "min_allocation": 16196,
@@ -32,7 +36,8 @@
       "on_disk": true
     },
     {
-      "index": 4,
+      "index": 3,
+      "number": 4,
       "file_offset": 240480,
       "bytes": 16053,
       "min_allocation": 16054,
@@ -41,7 +46,8 @@
       "on_disk": true
     },
     {
-      "index": 5,
+      "index": 4,
+      "number": 5,
       "file_offset": 256688,
       "bytes": 16212,
       "min_allocation": 16213,
@@ -50,7 +56,8 @@
       "on_disk": true
     },
     {
-      "index": 6,
+      "index": 5,
+      "number": 6,
       "file_offset": 273120,
       "bytes": 15943,
       "min_allocation": 15944,
@@ -59,7 +66,8 @@
       "on_disk": true
     },
     {
-      "index": 7,
+      "index": 6,
+      "number": 7,
       "file_offset": 289264,
       "bytes": 16269,
       "min_allocation": 16270,
@@ -68,7 +76,8 @@
       "on_disk": true
     },
     {
-      "index": 8,
+      "index": 7,
+      "number": 8,
       "file_offset": 305760,
       "bytes": 16296,
       "min_allocation": 16297,
@@ -77,7 +86,8 @@
       "on_disk": true
     },
     {
-      "index": 9,
+      "index": 8,
+      "number": 9,
       "file_offset": 322224,
       "bytes": 16070,
       "min_allocation": 16071,
@@ -86,7 +96,8 @@
       "on_disk": true
     },
     {
-      "index": 10,
+      "index": 9,
+      "number": 10,
       "file_offset": 338432,
       "bytes": 16016,
       "min_allocation": 16017,
@@ -95,7 +106,8 @@
       "on_disk": true
     },
     {
-      "index": 11,
+      "index": 10,
+      "number": 11,
       "file_offset": 354768,
       "bytes": 16036,
       "min_allocation": 16036,
@@ -104,7 +116,8 @@
       "on_disk": true
     },
     {
-      "index": 12,
+      "index": 11,
+      "number": 12,
       "file_offset": 370992,
       "bytes": 17387,
       "min_allocation": 17388,
@@ -113,7 +126,8 @@
       "on_disk": true
     },
     {
-      "index": 13,
+      "index": 12,
+      "number": 13,
       "file_offset": 388480,
       "bytes": 13272,
       "min_allocation": 13273,
@@ -122,7 +136,8 @@
       "on_disk": true
     },
     {
-      "index": 14,
+      "index": 13,
+      "number": 14,
       "file_offset": 401904,
       "bytes": 13061,
       "min_allocation": 13062,
@@ -131,7 +146,8 @@
       "on_disk": true
     },
     {
-      "index": 15,
+      "index": 14,
+      "number": 15,
       "file_offset": 415120,
       "bytes": 15560,
       "min_allocation": 15561,
@@ -140,7 +156,8 @@
       "on_disk": true
     },
     {
-      "index": 16,
+      "index": 15,
+      "number": 16,
       "file_offset": 431360,
       "bytes": 13684,
       "min_allocation": 13685,
@@ -149,7 +166,8 @@
       "on_disk": true
     },
     {
-      "index": 17,
+      "index": 16,
+      "number": 17,
       "file_offset": 445248,
       "bytes": 15517,
       "min_allocation": 15518,
@@ -158,7 +176,8 @@
       "on_disk": true
     },
     {
-      "index": 18,
+      "index": 17,
+      "number": 18,
       "file_offset": 460928,
       "bytes": 35517,
       "min_allocation": 35518,
@@ -167,7 +186,8 @@
       "on_disk": true
     },
     {
-      "index": 19,
+      "index": 18,
+      "number": 19,
       "file_offset": 496560,
       "bytes": 24990,
       "min_allocation": 24990,
@@ -176,7 +196,8 @@
       "on_disk": true
     },
     {
-      "index": 20,
+      "index": 19,
+      "number": 20,
       "file_offset": 521648,
       "bytes": 14811,
       "min_allocation": 14812,
@@ -185,7 +206,8 @@
       "on_disk": true
     },
     {
-      "index": 21,
+      "index": 20,
+      "number": 21,
       "file_offset": 536512,
       "bytes": 12626,
       "min_allocation": 12627,
@@ -194,7 +216,8 @@
       "on_disk": true
     },
     {
-      "index": 22,
+      "index": 21,
+      "number": 22,
       "file_offset": 549392,
       "bytes": 15314,
       "min_allocation": 15314,
@@ -203,7 +226,8 @@
       "on_disk": true
     },
     {
-      "index": 23,
+      "index": 22,
+      "number": 23,
       "file_offset": 564784,
       "bytes": 22740,
       "min_allocation": 22740,
@@ -212,7 +236,8 @@
       "on_disk": true
     },
     {
-      "index": 24,
+      "index": 23,
+      "number": 24,
       "file_offset": 587840,
       "bytes": 21383,
       "min_allocation": 21384,
@@ -221,7 +246,8 @@
       "on_disk": true
     },
     {
-      "index": 25,
+      "index": 24,
+      "number": 25,
       "file_offset": 609344,
       "bytes": 7430,
       "min_allocation": 7431,
@@ -230,7 +256,8 @@
       "on_disk": true
     },
     {
-      "index": 26,
+      "index": 25,
+      "number": 26,
       "file_offset": 616816,
       "bytes": 12533,
       "min_allocation": 12534,
@@ -239,7 +266,8 @@
       "on_disk": true
     },
     {
-      "index": 27,
+      "index": 26,
+      "number": 27,
       "file_offset": 2816,
       "bytes": 16262,
       "min_allocation": 16263,
@@ -248,7 +276,8 @@
       "on_disk": true
     },
     {
-      "index": 28,
+      "index": 27,
+      "number": 28,
       "file_offset": 19264,
       "bytes": 14990,
       "min_allocation": 14990,
@@ -257,7 +286,8 @@
       "on_disk": true
     },
     {
-      "index": 29,
+      "index": 28,
+      "number": 29,
       "file_offset": 34448,
       "bytes": 28229,
       "min_allocation": 28229,
@@ -266,7 +296,8 @@
       "on_disk": true
     },
     {
-      "index": 30,
+      "index": 29,
+      "number": 30,
       "file_offset": 63248,
       "bytes": 28416,
       "min_allocation": 28416,
@@ -275,7 +306,8 @@
       "on_disk": true
     },
     {
-      "index": 31,
+      "index": 30,
+      "number": 31,
       "file_offset": 92288,
       "bytes": 31436,
       "min_allocation": 31437,
@@ -284,7 +316,8 @@
       "on_disk": true
     },
     {
-      "index": 32,
+      "index": 31,
+      "number": 32,
       "file_offset": 124528,
       "bytes": 20662,
       "min_allocation": 20662,
@@ -293,7 +326,8 @@
       "on_disk": true
     },
     {
-      "index": 33,
+      "index": 32,
+      "number": 33,
       "file_offset": 145392,
       "bytes": 12019,
       "min_allocation": 12019,
@@ -302,7 +336,8 @@
       "on_disk": true
     },
     {
-      "index": 34,
+      "index": 33,
+      "number": 34,
       "file_offset": 158016,
       "bytes": 9404,
       "min_allocation": 9404,
@@ -311,7 +346,8 @@
       "on_disk": true
     },
     {
-      "index": 35,
+      "index": 34,
+      "number": 35,
       "file_offset": 168784,
       "bytes": 11641,
       "min_allocation": 30598,

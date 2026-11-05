@@ -9,7 +9,7 @@ from rebrew.formats import dfm
 
 REPO = Path(__file__).resolve().parent.parent
 ORIGINAL = REPO / "original" / "holiday.exe"
-OUT_DIR = REPO / "src" / "main" / "forms"
+OUT_DIR = REPO / "build" / "forms-reference"
 
 def unit_for(cls: str) -> str | None:
     """The reconstructed form unit for *cls* (segment and unit name)."""

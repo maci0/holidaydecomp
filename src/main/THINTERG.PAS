@@ -89,14 +89,17 @@ implementation
 uses DATEN, BAUFEN, DATWIN, AUKTION, GFX, KOMPASS, HIGHSCOR, HAUS, DARSTELL, START, SCHLUSS, GELD,
   SEG15, MENU, SOUND, BAUEN, MAP, UEBERMAP, DataVal;
 
+{ ADDRESS: MAIN 0x00000043 }
 procedure Proc0_0043;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00000243 }
 procedure Proc0_0243;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0000032e }
 procedure Proc0_032E(var A0: file);
 begin
   BlockWrite(A0, Pair0066[1], 1);
@@ -212,18 +215,22 @@ begin
   BlockWrite(A0, Pair0070[2], 1);
 end;
 
+{ ADDRESS: MAIN 0x00000c6a }
 procedure Proc0_0C6A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000017bc }
 procedure Proc0_17BC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00001e9b }
 procedure Proc0_1E9B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00001ea0 }
 procedure Proc0_1EA0;
 type
   PLong11 = ^LongInt;
@@ -283,6 +290,7 @@ begin
   PLong11(@Pair12AA[18])^ := $01950270;
 end;
 
+{ ADDRESS: MAIN 0x000021a0 }
 procedure Proc0_21A0;
 begin
   Proc3_26B9($6F, P6516^);
@@ -335,14 +343,17 @@ procedure Proc0_3A8E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003aff }
 procedure Proc0_3AFF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003b06 }
 procedure Proc0_3B06;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003c01 }
 procedure Proc0_3C01(var A0);
 type
   PC3 = ^TC3;
@@ -370,6 +381,7 @@ begin
   Far56E1(@A0);
 end;
 
+{ ADDRESS: MAIN 0x00003cec }
 procedure Proc0_3CEC;
 begin
 end;
@@ -378,14 +390,17 @@ procedure Proc0_3D0C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003d54 }
 function Proc0_3D54(A0, A1, A2: Word): Word;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003d9e }
 procedure Proc0_3D9E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003dc9 }
 function Proc0_3DC9(A0, A1: Integer): Integer;
 begin
   if (A0 > 0) and (A0 < 250) and (A1 > 0) and (A1 < 250) then
@@ -393,6 +408,7 @@ begin
   else Proc0_3DC9 := 255;
 end;
 
+{ ADDRESS: MAIN 0x00003e0d }
 function Proc0_3E0D(A0, A1: Integer): Integer;
 begin
   if (A0 > 0) and (A0 < 250) and (A1 > 0) and (A1 < 250) then
@@ -452,10 +468,12 @@ procedure Far070B(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003e51 }
 procedure Proc0_3E51;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003e8d }
 function Proc0_3E8D(A0, A1: Integer): Integer;
 begin
   if (A0 > 0) and (A0 < 250) and (A1 > 0) and (A1 < 250) then
@@ -463,61 +481,75 @@ begin
   else Proc0_3E8D := 16;
 end;
 
+{ ADDRESS: MAIN 0x00003ed1 }
 function Proc0_3ED1(A0, A1: Word): Word;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003f15 }
 function Proc0_3F15(A0, A1: Word): Word;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003f59 }
 procedure Proc0_3F59;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003f7b }
 procedure Proc0_3F7B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003fac }
 procedure Proc0_3FAC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00002241 }
 procedure THintergrund.AppOnActivate;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00002254 }
 procedure THintergrund.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00002466 }
 procedure THintergrund.Timer1Timer(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003938 }
 procedure THintergrund.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000039b7 }
 procedure THintergrund.FilmPanelClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003a36 }
 procedure THintergrund.backgroundimageClick(Sender: TObject);
 begin
   FilmPanelClick(Sender);
 end;
 
+{ ADDRESS: MAIN 0x00003a4d }
 procedure THintergrund.FormCreate;
 begin
   Application.OnActivate := AppOnActivate;
 end;
 
+{ ADDRESS: MAIN 0x00003a77 }
 procedure THintergrund.FormActivate;
 begin
   AppOnActivate(Sender);
 end;
 
+{ ADDRESS: MAIN 0x00003a8e }
 procedure THintergrund.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   ShutdownObjects[0].Free;

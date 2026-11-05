@@ -1,12 +1,13 @@
 {
   "target": "main",
-  "source_sha256": "cff5b9352878ccaa8bc7dfcbac06bda4cf9e94c0ef30b364858e15fc17596a77",
+  "source_sha256": "a9d1bddf2b500a2f6ea4d65fef8303fa86eafeac15f40ab1888eb968b57e676a",
   "source_files": 28,
   "procedures": {
     "candidate": 358,
     "empty_stub": 922,
     "unbound": 24
   },
+  "form_layouts": 23,
   "units": [
     {
       "file": "src/main/THINTERG.PAS",
@@ -142,13 +143,13 @@
   "measurement": {
     "metric": "whole-file matching-window union",
     "window": 16,
-    "covered_bytes": 286125,
+    "covered_bytes": 284809,
     "reference_bytes": 672992,
-    "same_offset_bytes": 14331,
-    "rebuilt_bytes": 620288,
+    "same_offset_bytes": 14282,
+    "rebuilt_bytes": 618496,
     "raw_exact": false,
     "reference_sha256": "dfdfe07f7cc34cc1717c1a1419f2ab773a13d074e8bbcb0d33659c3e6575dd07",
-    "rebuilt_sha256": "d9783b7a359c46cca1bdc04ab72733e18f67edb25859444032bbc8e8b034c7a3",
+    "rebuilt_sha256": "6ff3717dc582d80bdb966c242fcccff3f70a2716883320b5e56321ee9ce38b67",
     "segments": [
       {
         "index": 0,
@@ -328,7 +329,7 @@
       {
         "index": -1,
         "bytes": 43643,
-        "covered_bytes": 43529
+        "covered_bytes": 42222
       }
     ]
   }

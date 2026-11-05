@@ -93,44 +93,54 @@ implementation
 
 uses THINTERG, TDUMMYFO, DATEN, BAUFEN, DATWIN, GFX, SEG15, SOUND, MAP, SEG24;
 
+{ ADDRESS: MAIN 0x00100123 }
 procedure Proc16_0123;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0010014c }
 procedure Proc16_014C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0010017f }
 procedure Proc16_017F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001001b2 }
 procedure Proc16_01B2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00100235 }
 procedure Proc16_0235;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001002bc }
 procedure Proc16_02BC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001002d9 }
 procedure Proc16_02D9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00100be9 }
 procedure Proc16_0BE9;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00100bfb }
 procedure Proc16_0BFB;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00100e8b }
 procedure Proc16_0E8B;
 begin
 end;
@@ -139,23 +149,28 @@ procedure Far56CE(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00100e92 }
 procedure Proc16_0E92;
 begin
   Far56CE(A0);
 end;
 
+{ ADDRESS: MAIN 0x00100ea8 }
 procedure Proc16_0EA8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00101141 }
 procedure Proc16_1141;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0010145f }
 procedure Proc16_145F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00101b24 }
 procedure Proc16_1B24;
 begin
 end;
@@ -199,6 +214,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001022be }
 function Proc16_22BE(A0, A1: Word): Word;
 begin
   case Proc0_3E0D(A0, A1) of
@@ -218,6 +234,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0010232a }
 function Proc16_232A(A0, A1: Word): Word;
 var
   N: Word;
@@ -294,6 +311,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0010261a }
 function Proc16_261A(A0, A1: Word): Word;
 var
   N: Word;
@@ -351,10 +369,12 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00102831 }
 procedure Proc16_2831;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001029d8 }
 function Proc16_29D8(A0, A1: Word): Boolean;
 begin
   if ((Proc0_3DC9(A0, A1) = $FF) or (Proc0_3DC9(A0, A1) = $C)) and
@@ -369,6 +389,7 @@ begin
     Proc16_29D8 := False;
 end;
 
+{ ADDRESS: MAIN 0x00102a82 }
 function Proc16_2A82(A0, A1: Word): Boolean;
 begin
   if (Proc0_3E0D(A0, A1) = 3) or (Proc0_3E0D(A0, A1) = 2) then
@@ -382,6 +403,7 @@ begin
     Proc16_2A82 := False;
 end;
 
+{ ADDRESS: MAIN 0x00102b0c }
 procedure Proc16_2B0C(A0, A1: Word);
 begin
   if Proc16_29D8(A0, A1) then
@@ -434,6 +456,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00102e6a }
 procedure Proc16_2E6A(A0, A1: Word);
 begin
   if Proc16_2A82(A0, A1) then
@@ -460,6 +483,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0010302a }
 procedure Proc16_302A(A0, A1: Word);
 begin
   if (Proc0_3E8D(A0 + 1, A1) = $10) and (Proc0_3E0D(A0 + 1, A1) >= $0A) and
@@ -476,38 +500,47 @@ begin
     MapTileA^[A0, A1 - 1] := Proc16_232A(A0, A1 - 1);
 end;
 
+{ ADDRESS: MAIN 0x00103195 }
 procedure Proc16_3195;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001031ed }
 procedure Proc16_31ED;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00103216 }
 procedure Proc16_3216;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00103c3c }
 procedure Proc16_3C3C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00103c6d }
 procedure Proc16_3C6D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00101c3b }
 procedure Tumenuform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00101e54 }
 procedure Tumenuform.BildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00101f18 }
 procedure Tumenuform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0010202b }
 procedure Tumenuform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;

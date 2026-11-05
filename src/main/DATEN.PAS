@@ -101,6 +101,7 @@ implementation
 uses THINTERG, TDUMMYFO, ABRECHNE, BAUFEN, DATWIN, AUKTION, GFX, KOMPASS, HIGHSCOR, HAUS, DARSTELL,
   START, OPTION, SCHLUSS, GELD, SEG15, MENU, ANIM, SOUND, MAP, UEBERMAP, SEG24;
 
+{ ADDRESS: MAIN 0x00021d62 }
 function Proc2_1D62(N: LongInt): LongInt;
 begin
   if N < 80 then
@@ -115,6 +116,7 @@ begin
     Proc2_1D62 := 1600;
 end;
 
+{ ADDRESS: MAIN 0x00021e05 }
 function Proc2_1E05(N: LongInt): LongInt;
 begin
   if N > 400 then
@@ -136,123 +138,152 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0002000e }
 procedure Proc2_000E;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00020414 }
 procedure Proc2_0414;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002064a }
 procedure Proc2_064A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00020765 }
 procedure Proc2_0765;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00020799 }
 procedure Proc2_0799;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000208d7 }
 procedure Proc2_08D7;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00020b02 }
 procedure Proc2_0B02;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00020d4c }
 procedure Proc2_0D4C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00020f96 }
 procedure Proc2_0F96;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00020faa }
 procedure Proc2_0FAA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021129 }
 procedure Proc2_1129;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000211cd }
 procedure Proc2_11CD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002122f }
 procedure Proc2_122F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002129e }
 procedure Proc2_129E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021432 }
 procedure Proc2_1432;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000214c1 }
 procedure Proc2_14C1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000214f7 }
 procedure Proc2_14F7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002152d }
 procedure Proc2_152D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021572 }
 procedure Proc2_1572;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000215d2 }
 procedure Proc2_15D2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000215ea }
 procedure Proc2_15EA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002169d }
 procedure Proc2_169D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000216b5 }
 procedure Proc2_16B5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021715 }
 procedure Proc2_1715;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002172f }
 procedure Proc2_172F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000217f0 }
 procedure Proc2_17F0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021808 }
 procedure Proc2_1808;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021820 }
 procedure Proc2_1820;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021838 }
 procedure Proc2_1838(A0: Pointer; var A1);
 type
   { One element is enough: the array only exists to make D1 scale by 256, which
@@ -293,22 +324,27 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00021919 }
 procedure Proc2_1919;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021931 }
 procedure Proc2_1931;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000219f1 }
 procedure Proc2_19F1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021ae2 }
 procedure Proc2_1AE2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00021c86 }
 function Proc2_1C86(A0: LongInt): LongInt;
 begin
   if A0 > 163840 then
@@ -326,6 +362,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00021ea5 }
 function Proc2_1EA5(A0, A1: Word): Boolean;
 begin
   Proc2_1EA5 := False;
@@ -333,6 +370,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00021efa }
 function Proc2_1EFA(A0, A1, A2: Word): Boolean;
 begin
   Proc2_1EFA := (Proc6_16A2(A0, A1, A2) <> 0) and Proc2_1EA5(A1, A2);
@@ -340,12 +378,14 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00021f2d }
 function Proc2_1F2D(A0, A1: Word): Boolean;
 begin
   Proc2_1F2D := False;
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00021f8f }
 function Proc2_1F8F(A0, A1, A2, A3, A4: SmallInt; P1, P2: PWord2): Word;
 var
   T, U, V, I: SmallInt;
@@ -416,6 +456,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000220e0 }
 function Proc2_20E0(A0, A1, A2, A3, A4: SmallInt; P1, P2: PWord2): Word;
 var
   T, U, V, I: SmallInt;
@@ -488,10 +529,12 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00022225 }
 procedure Proc2_2225;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000223d6 }
 procedure Proc2_23D6(P: PBoard2);
 var
   I: Byte;
@@ -513,58 +556,71 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00022493 }
 procedure Proc2_2493;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0002254d }
 procedure Proc2_254D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000225dc }
 procedure Proc2_25DC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000226ea }
 procedure Proc2_26EA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000226fa }
 procedure Proc2_26FA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022820 }
 procedure Proc2_2820;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022970 }
 procedure Proc2_2970;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000229cc }
 procedure Proc2_29CC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022a0c }
 procedure Proc2_2A0C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022a5a }
 procedure Proc2_2A5A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022ac7 }
 procedure Proc2_2AC7;
 begin
   MAP.Pad651A[A0] := 1;
   Proc2_2AF5;
 end;
 
+{ ADDRESS: MAIN 0x00022ade }
 procedure Proc2_2ADE;
 begin
   MAP.Pad651A[A0] := 0;
   Proc2_2AF5;
 end;
 
+{ ADDRESS: MAIN 0x00022af5 }
 procedure Proc2_2AF5;
 var I: ShortInt;
 begin
@@ -573,74 +629,91 @@ begin
   DATWIN.THauptschirm(MAP.P6532).ButtonImage.Refresh;
 end;
 
+{ ADDRESS: MAIN 0x00022b3b }
 procedure Proc2_2B3B;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00022b4c }
 procedure Proc2_2B4C;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00022b60 }
 procedure Proc2_2B60;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022bc4 }
 procedure Proc2_2BC4;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00022be1 }
 procedure Proc2_2BE1;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00022c20 }
 procedure Proc2_2C20;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022c8b }
 procedure Proc2_2C8B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022fa9 }
 procedure Proc2_2FA9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022fce }
 procedure Proc2_2FCE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00022fea }
 procedure Proc2_2FEA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023006 }
 procedure Proc2_3006(A0: Word; A1, A2, A3, A4: LongInt; A5, A6: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023084 }
 procedure Proc2_3084;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000236f8 }
 procedure Proc2_36F8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023ab4 }
 procedure Proc2_3AB4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023e75 }
 procedure Proc2_3E75;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023e8a }
 procedure Proc2_3E8A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00023ee7 }
 procedure Proc2_3EE7;
 begin
 end;

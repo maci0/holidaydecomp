@@ -468,6 +468,7 @@ procedure Proc0_3FAC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00003d0c }
 procedure TDummyForm.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;

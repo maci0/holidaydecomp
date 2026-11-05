@@ -118,26 +118,32 @@ implementation
 
 uses ABRECHNE, DATEN, BAUFEN, DATWIN, GFX, HIGHSCOR, HAUS, GELD, SOUND, SEG24;
 
+{ ADDRESS: MAIN 0x000d0180 }
 procedure Proc13_0180;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d01b3 }
 procedure Proc13_01B3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d01df }
 procedure Proc13_01DF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0201 }
 procedure Proc13_0201;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0218 }
 procedure Proc13_0218;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d023a }
 procedure Proc13_023A(A: Word; P: Pointer; N: Word);
 var
   i: Word;
@@ -150,14 +156,17 @@ procedure Far2A0(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0288 }
 procedure Proc13_0288;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d09a5 }
 procedure Proc13_09A5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0e1a }
 procedure Proc13_0E1A(var P: TRec0E1A);
 begin
   Far0E39(P.F19C^);
@@ -182,22 +191,27 @@ procedure Far0EDC(var A0: TThing13E);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0e68 }
 procedure Proc13_0E68;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d0f52 }
 procedure Proc13_0F52;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1016 }
 procedure Proc13_1016;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1340 }
 procedure Proc13_1340;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1593 }
 procedure Proc13_1593;
 begin
 end;
@@ -210,6 +224,7 @@ procedure Proc13_16E0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d17ad }
 procedure Proc13_17AD(P: Pointer);
 begin
 end;
@@ -228,40 +243,49 @@ begin
   Proc13_17AD(P);
 end;
 
+{ ADDRESS: MAIN 0x000d19ac }
 procedure Proc13_19AC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d19be }
 procedure Proc13_19BE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d19d0 }
 procedure Proc13_19D0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d19e2 }
 procedure Proc13_19E2(P: PSlot13);
 begin
   P^ := nil;
 end;
 
+{ ADDRESS: MAIN 0x000d19f5 }
 procedure Proc13_19F5(P: PSlot13);
 begin
   P^ := nil;
 end;
 
+{ ADDRESS: MAIN 0x000d1a08 }
 procedure Proc13_1A08;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1b3e }
 procedure Proc13_1B3E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1c7d }
 procedure Proc13_1C7D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1d05 }
 procedure Proc13_1D05(var Head: PNode13; Data: Pointer);
 var
   Node: PNode13;
@@ -274,6 +298,7 @@ begin
   Head := Node;
 end;
 
+{ ADDRESS: MAIN 0x000d1d55 }
 procedure Proc13_1D55(var Head: PNode13; Data: Pointer);
 var
   Node: PNode13;
@@ -296,6 +321,7 @@ begin
   Far1F0E := NIL;
 end;
 
+{ ADDRESS: MAIN 0x000d1da5 }
 procedure Proc13_1DA5(var Head: PNode13; Item: Pointer);
 var
   Current: PNode13;
@@ -311,6 +337,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000d1e09 }
 procedure Proc13_1E09(var Head: PNode13; Item: Pointer);
 var
   Current: PNode13;
@@ -326,18 +353,22 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000d1e6d }
 procedure Proc13_1E6D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d1fe0 }
 procedure Proc13_1FE0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2153 }
 procedure Proc13_2153;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2243 }
 procedure Proc13_2243(var Head: PNode13; Key: Pointer);
 var
   Node: PNode13;
@@ -375,6 +406,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000d233c }
 procedure Proc13_233C(var Head: PNode13; Key: Pointer);
 var
   Node: PNode13;
@@ -428,18 +460,22 @@ procedure Far2461(A0: Pointer; A1: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2435 }
 procedure Proc13_2435;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2479 }
 procedure Proc13_2479;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d24bd }
 procedure Proc13_24BD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2501 }
 procedure Proc13_2501(var Head: PNode13);
 var
   Next: PNode13;
@@ -452,6 +488,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000d2549 }
 procedure Proc13_2549(var Head: PNode13);
 var
   Next: PNode13;
@@ -472,90 +509,107 @@ procedure Far26A6(A0: Pointer; A1: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2591 }
 procedure Proc13_2591;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000d25fd }
 procedure Proc13_25FD;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000d2698 }
 procedure Proc13_2698;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d27a5 }
 procedure Proc13_27A5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2a2b }
 procedure Proc13_2A2B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2bba }
 procedure Proc13_2BBA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d2ce9 }
 procedure Proc13_2CE9;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000d2d49 }
 procedure Proc13_2D49;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d2e05 }
 procedure Proc13_2E05(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d2ebc }
 procedure Proc13_2EBC(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d2f73 }
 procedure Proc13_2F73(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d2fe1 }
 procedure Proc13_2FE1(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d304f }
 procedure Proc13_304F(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d30d0 }
 procedure Proc13_30D0(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d313e }
 procedure Proc13_313E(P: Pointer);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000d3244 }
 procedure Proc13_3244(P: Pointer);
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000d32b5 }
 procedure Proc13_32B5(P: Pointer);
 begin
   Proc13_313E(P);
@@ -565,6 +619,7 @@ begin
   Proc13_2D49;
 end;
 
+{ ADDRESS: MAIN 0x000d32df }
 procedure Proc13_32DF(P: Pointer);
 begin
   Proc13_3244(P);
@@ -573,22 +628,27 @@ begin
   Proc13_30D0(P);
 end;
 
+{ ADDRESS: MAIN 0x000d1613 }
 procedure TSchlussform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d16e0 }
 procedure TSchlussform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d187f }
 procedure TSchlussform.Timer1Timer(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d198a }
 procedure TSchlussform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000d199b }
 procedure TSchlussform.Panel1Click(Sender: TObject);
 begin
 end;

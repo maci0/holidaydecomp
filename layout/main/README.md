@@ -1,6 +1,6 @@
 # Win16 target layout
 
-`segments.json` records NE segment indices, file offsets, extents and flags from the local reference. Native procedure identities use zero-based `segment * 0x10000 + offset`; these are the addresses in `rebrew-functions.toml` and `src/main/function_structure.json`.
+`segments.json` records zero-based `index`, one-based NE segment `number`, file offsets, extents and flags from the local reference. Native procedure identities use zero-based `segment * 0x10000 + offset`; these are the addresses in `rebrew-functions.toml` and `src/main/function_structure.json`. See the [native format guide](../../docs/native-format.md).
 
 The target is `main`, module `MAIN`, format `ne`, architecture `x86_16`, using the `delphi-1.0` toolchain. Compile the complete `src/main/HOLIDAY.DPR`; this target does not use per-function C/COFF linking.
 

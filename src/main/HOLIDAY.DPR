@@ -1,6 +1,6 @@
 program HOLIDAY;
 { Reconstructed from original/holiday.exe.  The program links 26 units, in
-  the order their code segments appear in the image (segments 0-25); the
+  the order their code segments appear in the image (segments 0-24); the
   VCL follows (segments 25-33) and the linked data segment is 34.
   The title string is the one embedded in segment 0.  Delphi 1 rejects a
   source line longer than 126 characters (Error 11), hence the wrapped uses.

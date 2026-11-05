@@ -20,10 +20,11 @@ def layout() -> dict:
     image = NeImage(gen_tree.ORIGINAL)
     return {
         "target": "main", "format": "ne",
+        "index_base": 0,
         "reference_sha256": hashlib.sha256(image.data).hexdigest(),
         "address_encoding": "zero-based segment * 0x10000 + offset",
         "segments": [
-            {"index": s.index, "file_offset": s.file_offset, "bytes": s.length,
+            {"index": s.index - 1, "number": s.index, "file_offset": s.file_offset, "bytes": s.length,
              "min_allocation": s.min_allocation, "flags": s.flags,
              "code": s.is_code, "on_disk": s.on_disk}
             for s in image.segment_records

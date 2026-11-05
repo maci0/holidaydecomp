@@ -470,162 +470,201 @@ begin
   Slot7 := False;
 end;
 
+{ ADDRESS: MAIN 0x000c0151 }
 procedure Proc12_0151;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0163 }
 procedure Proc12_0163;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0175 }
 procedure Proc12_0175;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c01ab }
 procedure Proc12_01AB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c01dc }
 procedure Proc12_01DC;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000c01fa }
 procedure Proc12_01FA;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000c0224 }
 procedure Proc12_0224;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0239 }
 procedure Proc12_0239;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c024e }
 procedure Proc12_024E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0263 }
 procedure Proc12_0263;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0278 }
 procedure Proc12_0278;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c028d }
 procedure Proc12_028D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c02a2 }
 procedure Proc12_02A2;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000c02b7 }
 procedure Proc12_02B7;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000c044f }
 procedure Proc12_044F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0464 }
 procedure Proc12_0464;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0479 }
 procedure Proc12_0479;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c048e }
 procedure Proc12_048E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c04a3 }
 procedure Proc12_04A3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c04b8 }
 procedure Proc12_04B8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c04cd }
 procedure Proc12_04CD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c04e2 }
 procedure Proc12_04E2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c04f9 }
 procedure Proc12_04F9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c050b }
 procedure Proc12_050B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0522 }
 procedure Proc12_0522;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0534 }
 procedure Proc12_0534;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c054d }
 procedure Proc12_054D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c055f }
 procedure Proc12_055F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0571 }
 procedure Proc12_0571;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0583 }
 procedure Proc12_0583;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0595 }
 procedure Proc12_0595;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c05a7 }
 procedure Proc12_05A7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c05b9 }
 procedure Proc12_05B9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c05cb }
 procedure Proc12_05CB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0619 }
 procedure Proc12_0619;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0637 }
 procedure Proc12_0637;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0656 }
 procedure Proc12_0656;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c06ba }
 procedure Proc12_06BA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c071e }
 procedure Proc12_071E;
 begin
 end;
@@ -634,6 +673,7 @@ procedure Proc12_0782;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0789 }
 procedure Proc12_0789;
 begin
 end;
@@ -642,14 +682,17 @@ procedure Proc12_0E79;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0e80 }
 procedure Proc12_0E80;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0ed0 }
 procedure Proc12_0ED0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c14f1 }
 procedure Proc12_14F1(var A0: TRecP);
 var
   S: string;
@@ -770,6 +813,7 @@ begin
   Fared0(@A0);
 end;
 
+{ ADDRESS: MAIN 0x000c231c }
 procedure Proc12_231C;
 begin
 end;
@@ -886,14 +930,17 @@ procedure TThing23.Slot12;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0782 }
 procedure TOptionenform.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c0e79 }
 procedure TOptionenform.FormHide;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000c2404 }
 procedure TOptionenform.bildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   Flag180 := 0;
@@ -946,6 +993,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000c29f0 }
 procedure TOptionenform.bildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
   if
@@ -961,6 +1009,7 @@ begin
     end;
 end;
 
+{ ADDRESS: MAIN 0x000c2b17 }
 procedure TOptionenform.bildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   if
@@ -975,6 +1024,7 @@ begin
     Self.M17E1(Field189);
 end;
 
+{ ADDRESS: MAIN 0x000c2c72 }
 procedure TOptionenform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
   if (Shift = []) or (Shift = [ssShift]) then
@@ -1065,6 +1115,7 @@ begin
   Far22C6(PThing(Bild)^);
 end;
 
+{ ADDRESS: MAIN 0x000c33cb }
 procedure TOptionenform.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;

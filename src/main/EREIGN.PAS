@@ -27,10 +27,12 @@ implementation
 
 uses THINTERG, TDUMMYFO, BAUFEN, GFX, DARSTELL, SEG15, MENU, ANIM, OBJEKT, SOUND, MAP, DataVal;
 
+{ ADDRESS: MAIN 0x00120014 }
 procedure Proc18_0014;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0012124f }
 procedure Proc18_124F;
 type
   TCell124 = packed record
@@ -136,6 +138,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x0012155b }
 procedure Proc18_155B;
 type
   TCell155 = packed record
@@ -215,6 +218,7 @@ AfterLoop:
 Exit155:
 end;
 
+{ ADDRESS: MAIN 0x00121836 }
 procedure Proc18_1836;
 type
   TObj1836 = packed record
@@ -260,6 +264,7 @@ procedure Far1A08;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00121919 }
 procedure Proc18_1919;
 type
   TCell19 = packed record
@@ -293,24 +298,29 @@ begin
               $CC, $20);
 end;
 
+{ ADDRESS: MAIN 0x00121a25 }
 procedure Proc18_1A25;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00122373 }
 procedure Proc18_2373;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00122c1f }
 procedure Proc18_2C1F;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00122ce5 }
 procedure Proc18_2CE5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00125293 }
 procedure Proc18_5293;
 begin
 end;

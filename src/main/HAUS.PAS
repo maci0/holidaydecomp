@@ -145,6 +145,7 @@ begin
   FieldAddr9 := @P^.Data[P^.Len];
 end;
 
+{ ADDRESS: MAIN 0x00093942 }
 function Proc9_3942(Root: PChar; N: Word): PChar;
 var
   At: PChar;
@@ -157,6 +158,7 @@ begin
   Proc9_3942 := At;
 end;
 
+{ ADDRESS: MAIN 0x0009396e }
 function Proc9_396E(Key: string; Root: PChar): LongInt;
 var
   K, Count: Word;
@@ -187,6 +189,7 @@ begin
   Proc9_396E := -1;
 end;
 
+{ ADDRESS: MAIN 0x000939c2 }
 function Proc9_39C2(Key: string; Root: PChar): LongInt;
 var
   K, Count: Word;
@@ -227,63 +230,76 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000901bd }
 procedure Proc9_01BD;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0009034f }
 procedure Proc9_034F;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000903c5 }
 procedure Proc9_03C5;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0009077a }
 procedure Proc9_077A;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0009087f }
 procedure Proc9_087F;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00090a54 }
 procedure Proc9_0A54;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000912e9 }
 procedure Proc9_12E9;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00091599 }
 procedure Proc9_1599;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000915e6 }
 procedure Proc9_15E6;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00091794 }
 procedure Proc9_1794;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00091939 }
 procedure Proc9_1939;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00091a4b }
 procedure Proc9_1A4B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00091b3e }
 procedure Proc9_1B3E;
 begin
 end;
@@ -312,6 +328,7 @@ procedure Stub8EF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00091ffd }
 procedure Proc9_1FFD;
 var
   Unused128: array[0..127] of Byte;
@@ -433,14 +450,17 @@ begin
   O6658.Slot12;
 end;
 
+{ ADDRESS: MAIN 0x0009249d }
 procedure Proc9_249D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092524 }
 procedure Proc9_2524;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000925ea }
 procedure Proc9_25EA;
 begin
 end;
@@ -450,6 +470,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000926b7 }
 procedure Proc9_26B7;
 begin
 end;
@@ -483,78 +504,97 @@ procedure Proc9_29E2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092a05 }
 procedure Proc9_2A05;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092a19 }
 procedure Proc9_2A19;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092bae }
 procedure Proc9_2BAE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092d72 }
 procedure Proc9_2D72;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092dff }
 procedure Proc9_2DFF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092ed8 }
 procedure Proc9_2ED8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092fbd }
 procedure Proc9_2FBD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093098 }
 procedure Proc9_3098;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093172 }
 procedure Proc9_3172;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093256 }
 procedure Proc9_3256;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093339 }
 procedure Proc9_3339;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009341c }
 procedure Proc9_341C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000934ee }
 procedure Proc9_34EE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009358f }
 procedure Proc9_358F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000936b2 }
 procedure Proc9_36B2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009375e }
 procedure Proc9_375E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009387c }
 procedure Proc9_387C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009392d }
 procedure Proc9_392D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093a30 }
 procedure Proc9_3A30(Bucket: PArr9; Root: PChar);
 var
   K, Count, Idx: Word;
@@ -577,70 +617,87 @@ begin
   until Root = nil;
 end;
 
+{ ADDRESS: MAIN 0x00093a96 }
 procedure Proc9_3A96;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093ae1 }
 procedure Proc9_3AE1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093b71 }
 procedure Proc9_3B71;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093bf1 }
 procedure Proc9_3BF1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093c4b }
 procedure Proc9_3C4B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093cba }
 procedure Proc9_3CBA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093d32 }
 procedure Proc9_3D32;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093dca }
 procedure Proc9_3DCA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00093e2a }
 procedure Proc9_3E2A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000926b0 }
 procedure TFernseher.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000926f6 }
 procedure TFernseher.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009286b }
 procedure TFernseher.tvimageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009287d }
 procedure TFernseher.tvimageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0009288f }
 procedure TFernseher.tvleiimageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092922 }
 procedure TFernseher.tvleiimageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00092955 }
 procedure TFernseher.tvleiimageMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000929e2 }
 procedure TFernseher.FormHide;
 begin
   if MAP.B662C <> 0 then Proc9_034F;

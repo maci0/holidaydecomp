@@ -1,6 +1,6 @@
 UV ?= uv
 
-.PHONY: check generate metadata status status-measure build compare clean
+.PHONY: check generate forms docs docs-check vault metadata status status-measure build compare clean
 
 check:
 	$(UV) sync --frozen
@@ -8,16 +8,29 @@ check:
 	$(UV) run --frozen python -m unittest discover -s tools -p 'test_*.py'
 	$(UV) run --frozen python tools/gen_rebrew_functions.py --check
 	$(UV) run --frozen python tools/gen_status.py --check
+	$(UV) run --frozen python tools/gen_forms.py --check
+	$(UV) run --frozen python tools/gen_docs_index.py --check
 
 generate:
 	$(UV) run --frozen python tools/gen_functions_json.py
-	$(UV) run --frozen python tools/dfm_extract.py
-	$(UV) run --frozen python tools/dfm_pack.py
+	$(UV) run --frozen python tools/gen_forms.py --resource src/main/HOLIDAY.RES
 	$(UV) run --frozen python tools/gen_pools.py
 	$(UV) run --frozen python tools/gen_tables.py
 	$(UV) run --frozen python tools/gen_data.py
 	$(UV) run --frozen python tools/gen_tree.py
 	cp templates/REACH.PAS src/main/REACH.PAS
+
+forms:
+	$(UV) run --frozen python tools/gen_forms.py
+
+docs:
+	$(UV) run --frozen python tools/gen_docs_index.py
+
+docs-check:
+	$(UV) run --frozen python tools/gen_docs_index.py --check
+
+vault:
+	$(UV) run --frozen python tools/gen_docs_index.py --init-vault
 
 metadata:
 	$(UV) run --frozen python tools/gen_rebrew_functions.py
@@ -37,5 +50,5 @@ compare:
 clean:
 	rm -rf build bin output dist .scratch .rebrew .ruff_cache .pytest_cache
 	find tools -type d -name __pycache__ -prune -exec rm -rf {} +
-	rm -rf src/main/forms src/main/HOLIDAY.RES src/main/.gen_tree_files
+	rm -rf src/main/HOLIDAY.RES src/main/.gen_tree_files
 	rm -f src/main/DATAVAL.PAS src/main/POOLS.PAS src/main/TABLES.PAS

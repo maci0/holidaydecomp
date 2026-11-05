@@ -242,54 +242,67 @@ procedure Far17E1(A0: Word; var A1);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0007014b }
 procedure Proc7_014B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0007098d }
 procedure Proc7_098D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070a44 }
 procedure Proc7_0A44;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070afe }
 procedure Proc7_0AFE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070b40 }
 procedure Proc7_0B40;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070c00 }
 procedure Proc7_0C00;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070d3a }
 procedure Proc7_0D3A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00070e13 }
 procedure Proc7_0E13;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000717f3 }
 procedure Proc7_17F3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071899 }
 procedure Proc7_1899;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071a75 }
 procedure Proc7_1A75;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071b92 }
 procedure Proc7_1B92;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071ccf }
 procedure Proc7_1CCF(A0, A1: Word; A2: LongInt; A3: TObj7);
 begin
 end;
@@ -300,28 +313,34 @@ begin
   Proc7_1CCF(W1E, W20, L1E2, Self);
 end;
 
+{ ADDRESS: MAIN 0x00071eac }
 procedure Proc7_1EAC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071ee0 }
 procedure Proc7_1EE0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00071f69 }
 procedure Proc7_1F69;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00072302 }
 procedure Proc7_2302;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00072478 }
 procedure Proc7_2478;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000724d6 }
 procedure Proc7_24D6;
 begin
 end;
@@ -338,6 +357,7 @@ procedure Proc7_284B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000729e3 }
 procedure Proc7_29E3(A0, A1: Word);
 var
   P: Pointer;
@@ -349,6 +369,7 @@ begin
   Proc24_06FE(PLad7(P)^.L17C, @PLad7(P)^.Items[3]);
 end;
 
+{ ADDRESS: MAIN 0x00072a41 }
 procedure Proc7_2A41(A0, A1: Word);
 var
   P: Pointer;
@@ -360,6 +381,7 @@ begin
   Proc24_06FE(PLad7(P)^.L17C, @PLad7(P)^.Items[3]);
 end;
 
+{ ADDRESS: MAIN 0x00072a9f }
 procedure Proc7_2A9F(A0, A1: Word);
 var
   P: Pointer;
@@ -371,6 +393,7 @@ begin
   Proc24_06FE(PLad7(P)^.L17C, @PLad7(P)^.Items[3]);
 end;
 
+{ ADDRESS: MAIN 0x00072afd }
 procedure Proc7_2AFD(A0, A1: Word);
 var
   P: Pointer;
@@ -382,6 +405,7 @@ begin
   Proc24_06FE(PLad7(P)^.L17C, @PLad7(P)^.Items[2]);
 end;
 
+{ ADDRESS: MAIN 0x00072b5b }
 procedure Proc7_2B5B(A0: Pointer);
 begin
   Proc7_3243(G6620^);
@@ -389,10 +413,12 @@ begin
   Far22C6(PSeg7(P6532)^.F19C^);
 end;
 
+{ ADDRESS: MAIN 0x00072c04 }
 procedure Proc7_2C04;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000730b7 }
 procedure Proc7_30B7(P: PBlk7);
 begin
   Far56CE(P);
@@ -407,15 +433,18 @@ begin
   Far20C4(P^.F1A0);
 end;
 
+{ ADDRESS: MAIN 0x0007314f }
 procedure Proc7_314F(var A0);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073243 }
 procedure Proc7_3243(var A0);
 begin
   Far17E1(0, A0);
 end;
 
+{ ADDRESS: MAIN 0x00073256 }
 procedure Proc7_3256;
 begin
 end;
@@ -468,14 +497,17 @@ procedure Proc7_3557;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073682 }
 procedure Proc7_3682;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000736a2 }
 procedure Proc7_36A2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000736d5 }
 procedure Proc7_36D5(A0: PSub7);
 var
   Q: PSub7;
@@ -492,6 +524,7 @@ begin
     PObs7(G6ED0)^.Items[1].Disp^.H0C(PObs7(G6ED0)^.F17C, @PObs7(G6ED0)^.Items[1]);
 end;
 
+{ ADDRESS: MAIN 0x00073776 }
 procedure Proc7_3776(A0: PSub7);
 var
   Q: PSub7;
@@ -508,50 +541,60 @@ begin
     PObs7(G6ED0)^.Items[0].Disp^.H0C(PObs7(G6ED0)^.F17C, @PObs7(G6ED0)^.Items[0]);
 end;
 
+{ ADDRESS: MAIN 0x00073817 }
 procedure Proc7_3817;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073836 }
 procedure Proc7_3836;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0007385b }
 procedure Proc7_385B;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0007389d }
 procedure Proc7_389D;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0007390d }
 procedure Proc7_390D;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00073983 }
 procedure Proc7_3983;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00073a13 }
 procedure Proc7_3A13;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073a95 }
 procedure Proc7_3A95;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073b46 }
 procedure Proc7_3B46;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073dfa }
 procedure Proc7_3DFA;
 begin
 end;
@@ -583,44 +626,54 @@ begin
   P^ := 2;
 end;
 
+{ ADDRESS: MAIN 0x00073329 }
 procedure TKompassform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000734fc }
 procedure TKompassform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0007346f }
 procedure TKompassform.BildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073557 }
 procedure TKompassform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
   DATWIN.Proc4_2E09(Pointer(Sender), @Key, Shift, @MAP.P6532^);
 end;
 
+{ ADDRESS: MAIN 0x00073e24 }
 procedure TLadenForm.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073ef5 }
 procedure TLadenForm.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00073f9b }
 procedure TLadenForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
+{ ADDRESS: MAIN 0x00072742 }
 procedure TInfobox2.InfoimageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000727b4 }
 procedure TInfobox2.InfoimageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0007284b }
 procedure TInfobox2.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;

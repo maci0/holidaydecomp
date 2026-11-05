@@ -45,6 +45,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00130497 }
 function Proc19_0497(P: Integer): Integer;
 var
   R: Integer;
@@ -59,6 +60,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001304ca }
 function Proc19_04CA(X, A, B: Integer): Boolean;
 begin
   if (A > 0) and (A < $FA) and (B > 0) and (B < $FA) then
@@ -81,6 +83,7 @@ begin
   Wrap19 := R;
 end;
 
+{ ADDRESS: MAIN 0x00130002 }
 function Proc19_0002(A0: Word): Word;
 begin
   with PSlotArrF17(Slots)^[A0] do
@@ -96,10 +99,12 @@ begin
       Proc17_2DF2(A0);
 end;
 
+{ ADDRESS: MAIN 0x001300ef }
 procedure Proc19_00EF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001301c0 }
 function Proc19_01C0(A1, A2, A3: Word): Boolean;
 begin
   if (Proc0_3E0D(A2, A1) = 2) and (Proc0_3E8D(A2, A1) = $10) and
@@ -110,33 +115,39 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00130217 }
 procedure Proc19_0217;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001302c3 }
 procedure Proc19_02C3;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00130357 }
 function Proc19_0357(A0, A1: Word): Byte;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x001303b3 }
 procedure Proc19_03B3;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001304f9 }
 procedure Proc19_04F9;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00130745 }
 procedure Proc19_0745;
 begin
   case Pred7c of
@@ -235,6 +246,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00130a14 }
 procedure Proc19_0A14;
 begin
   case Pred7c of
@@ -333,6 +345,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00130ce3 }
 procedure Proc19_0CE3;
 begin
   case Pred7c of
@@ -391,6 +404,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00130e6d }
 procedure Proc19_0E6D;
 begin
   case Pred7c of
@@ -449,6 +463,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x0013109f }
 procedure Proc19_109F;
 begin
 end;

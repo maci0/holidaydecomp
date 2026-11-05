@@ -316,6 +316,7 @@ implementation
 uses THINTERG, TDUMMYFO, ABRECHNE, DATEN, BAUFEN, DATWIN, AUKTION, KOMPASS, HIGHSCOR, HAUS,
   DARSTELL, GELD, SEG15, ANIM, SOUND, BAUEN, MAP, UEBERMAP, SEG24, DataVal;
 
+{ ADDRESS: MAIN 0x00060af2 }
 function Proc6_0AF2(var Buf: PChar; Ch: Char): Byte;
 begin
   if Ord(Buf[0]) < $FE then
@@ -328,6 +329,7 @@ begin
     Proc6_0AF2 := $FF;
 end;
 
+{ ADDRESS: MAIN 0x00060caf }
 function Proc6_0CAF(S: PThree6; C1, C2, C3: Word): Byte;
 var
   R: Byte;
@@ -345,6 +347,7 @@ begin
     Proc6_0CAF := $FF;
 end;
 
+{ ADDRESS: MAIN 0x00060ee7 }
 function Proc6_0EE7(A: LongInt): LongInt;
 begin
   if A > 0 then
@@ -353,6 +356,7 @@ begin
     Proc6_0EE7 := 0;
 end;
 
+{ ADDRESS: MAIN 0x00060f19 }
 function Proc6_0F19(A, B: LongInt): LongInt;
 begin
   if A > B then
@@ -361,6 +365,7 @@ begin
     Proc6_0F19 := B;
 end;
 
+{ ADDRESS: MAIN 0x00060f53 }
 function Proc6_0F53(A, B: LongInt): LongInt;
 begin
   if A < B then
@@ -369,11 +374,13 @@ begin
     Proc6_0F53 := B;
 end;
 
+{ ADDRESS: MAIN 0x00060fb2 }
 function Proc6_0FB2(A, B: LongInt): LongInt;
 begin
   Proc6_0FB2 := Abs(A - B);
 end;
 
+{ ADDRESS: MAIN 0x00061517 }
 function Proc6_1517(A, B, AMin, BMin, AMax, BMax: Integer): Boolean;
 begin
   if (A >= AMin) and (A <= AMax) and (B >= BMin) and (B <= BMax) then
@@ -382,6 +389,7 @@ begin
     Proc6_1517 := False;
 end;
 
+{ ADDRESS: MAIN 0x00061e62 }
 function Proc6_1E62(Row, Col: SmallInt): Word;
 begin
   if (Row < 0) or (Row > $fa) or (Col < 0) or (Col > $fa) then
@@ -401,6 +409,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00061f93 }
 function Proc6_1F93(A, B: Integer): Boolean;
 begin
   if (A < 0) or (A > $FA) or (B < 0) or (B > $FA) then
@@ -409,6 +418,7 @@ begin
     Proc6_1F93 := True;
 end;
 
+{ ADDRESS: MAIN 0x00061fc2 }
 function Proc6_1FC2(A0, A1: Word): Boolean;
 begin
   Proc6_1FC2 := Proc6_1F93(Integer(A1), Integer(A0));
@@ -419,6 +429,7 @@ begin
   P^^ := 0;
 end;
 
+{ ADDRESS: MAIN 0x0006000d }
 procedure Proc6_000D(A0: Word; A1: PCell6G);
 begin
 end;
@@ -464,6 +475,7 @@ procedure Far0093;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000600eb }
 procedure Proc6_00EB(var P: TCur6);
 begin
   Inc(P.B4);
@@ -477,6 +489,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00060148 }
 procedure Proc6_0148(var A0: Pointer; var A1: TCell6);
 const
   C138 = 'st';
@@ -552,6 +565,7 @@ procedure Far15E7(A0, A1: Pointer; A2: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060263 }
 procedure Proc6_0263(Dest: PChar; Limit: LongInt; var Obj: TCell6);
 begin
   if (Obj.W6 - $7CC) * 12 + Obj.B5 > Limit then
@@ -597,6 +611,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0006108b }
 procedure Proc6_0108B(var A0: Pointer; A1: string);
 const
   C0 = '0';
@@ -642,6 +657,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00060fdd }
 procedure Proc6_0FDD(var A0: Pointer; A1: string);
 var
   W102, W104: SmallInt;
@@ -669,45 +685,55 @@ begin
   Far15E7B(A1, A0, $FF);
 end;
 
+{ ADDRESS: MAIN 0x000602ef }
 procedure Proc6_02EF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006032c }
 procedure Proc6_032C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060357 }
 procedure Proc6_0357;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060382 }
 function Proc6_0382(P: PCur6): Byte;
 begin
   Proc6_0382 := P^.B4;
 end;
 
+{ ADDRESS: MAIN 0x00060397 }
 function Proc6_0397(P: PCur6): Byte;
 begin
   Proc6_0397 := P^.B5;
 end;
 
+{ ADDRESS: MAIN 0x000603ac }
 function Proc6_03AC(P: PCur6): Word;
 begin
   Proc6_03AC := P^.W6;
 end;
 
+{ ADDRESS: MAIN 0x000603c1 }
 procedure Proc6_03C1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060413 }
 procedure Proc6_0413;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060465 }
 procedure Proc6_0465;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000604e3 }
 function Proc6_04E3(A0, A1: Integer; A2, A3: Byte; var A4: LongInt): Word;
 label LoopRow, LoopCol, NextRow, ContinueCol, Join, FDBCheck, Done;
 var
@@ -841,10 +867,12 @@ Done:
 end;
 
 
+{ ADDRESS: MAIN 0x00060ad2 }
 procedure Proc6_0AD2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060b3d }
 function Proc6_0B3D(P: PPByte6; N: Byte): Byte;
 begin
   if (Proc6_0C01(P) >= N) and (N > 0) then
@@ -853,44 +881,54 @@ begin
     Proc6_0B3D := $FF;
 end;
 
+{ ADDRESS: MAIN 0x00060b76 }
 procedure Proc6_0B76;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060c01 }
 function Proc6_0C01(P: PPByte6): Byte;
 begin
   Proc6_0C01 := P^^;
 end;
 
+{ ADDRESS: MAIN 0x00060c18 }
 procedure Proc6_0C18(P: PPByte6);
 begin
   P^^ := 0;
 end;
 
+{ ADDRESS: MAIN 0x00060c29 }
 procedure Proc6_0C29;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060c42 }
 procedure Proc6_0C42;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060c62 }
 procedure Proc6_0C62;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060c82 }
 procedure Proc6_0C82;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060d20 }
 procedure Proc6_0D20;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060d71 }
 procedure Proc6_0D71;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060dcb }
 function Proc6_0DCB(R: PThree6Ptr): Byte;
 var
   R0: Byte;
@@ -902,6 +940,7 @@ begin
     Proc6_0DCB := $FF;
 end;
 
+{ ADDRESS: MAIN 0x00060e15 }
 procedure Proc6_0E15(R: PThree6Ptr);
 begin
   Proc6_0C18(@R^.P0);
@@ -909,18 +948,22 @@ begin
   Proc6_0C18(@R^.P2);
 end;
 
+{ ADDRESS: MAIN 0x00060e42 }
 procedure Proc6_0E42;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060e6f }
 procedure Proc6_0E6F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060eab }
 procedure Proc6_0EAB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00060f8d }
 procedure Proc6_0F8D;
 begin
 end;
@@ -931,18 +974,22 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000611a0 }
 procedure Proc6_11A0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000613da }
 procedure Proc6_13DA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00061418 }
 procedure Proc6_1418;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006154c }
 procedure Proc6_154C(A0, A1: Integer; var P: TCoord6);
 var
   N: Integer;
@@ -958,11 +1005,13 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000615d2 }
 function Proc6_15D2(A0, A1, A2: Word): Boolean;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000616a2 }
 function Proc6_16A2(A0, A1, A2: Integer): Byte;
 var
   Res: Byte;
@@ -974,6 +1023,7 @@ begin
   Proc6_16A2 := Res;
 end;
 
+{ ADDRESS: MAIN 0x00061706 }
 function Proc6_1706(A0, A1, A2, A3: Integer): Word;
 var
   T, U, V, I: Integer;
@@ -1009,6 +1059,7 @@ begin
     Proc6_1706 := $FFFF;
 end;
 
+{ ADDRESS: MAIN 0x0006180d }
 function Proc6_180D(Row, Col: Integer): Byte;
 begin
   if (Row >= 0) and (Row <= $FA) and (Col >= 0) and (Col <= $FA) then
@@ -1017,16 +1068,19 @@ begin
     Proc6_180D := 0;
 end;
 
+{ ADDRESS: MAIN 0x0006185d }
 procedure Proc6_185D(A0, A1: Integer; A2, A3: LongInt; A4: Byte);
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00061ae9 }
 procedure Proc6_1AE9(A0, A1: Integer; A2, A3: LongInt; A4: Byte);
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00061d10 }
 procedure Proc6_1D10(A0, A1: Integer; A2, A3: Byte);
 begin
   Proc6_1AE9(
@@ -1038,10 +1092,12 @@ begin
     A3);
 end;
 
+{ ADDRESS: MAIN 0x00061daa }
 procedure Proc6_1DAA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00061dc6 }
 procedure Proc6_1DC6(A0, A1: Integer; A2, A3: Byte);
 begin
   Proc6_185D(
@@ -1053,6 +1109,7 @@ begin
     A3);
 end;
 
+{ ADDRESS: MAIN 0x00061fdb }
 function Proc6_1FDB(A0, A1: SmallInt): Byte;
 begin
   if (A0 <= 0) or (A0 >= $FA) or (A1 <= 0) or (A1 >= $FA) then
@@ -1063,6 +1120,7 @@ begin
         Proc6_0F19(Map0^[A0, A1 - 1], Map0^[A0 - 1, A1 - 1])));
 end;
 
+{ ADDRESS: MAIN 0x0006208d }
 function Proc6_208D(A0, A1: SmallInt): Byte;
 begin
   if (A0 <= 0) or (A0 >= $FA) or (A1 <= 0) or (A1 >= $FA) then
@@ -1073,34 +1131,42 @@ begin
         Proc6_0F53(Map0^[A0, A1 - 1], Map0^[A0 - 1, A1 - 1])));
 end;
 
+{ ADDRESS: MAIN 0x0006213f }
 procedure Proc6_213F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000621a8 }
 procedure Proc6_21A8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00062211 }
 procedure Proc6_2211;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006228d }
 procedure Proc6_228D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000622de }
 procedure Proc6_22DE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006232d }
 procedure Proc6_232D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006235a }
 procedure Proc6_235A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000623d3 }
 procedure Proc6_23D3(A0: Pointer; A1: Word; A2, A3, A4: Integer;
               A5: Byte; A6: Word; A7: string);
             label Done, Check1, WalkHead, Body1, Seg1, Tok1, Width2b,
@@ -1279,64 +1345,76 @@ procedure Proc6_23D3(A0: Pointer; A1: Word; A2, A3, A4: Integer;
             end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00062972 }
 procedure Proc6_2972;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00062b19 }
 procedure Proc6_2B19;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00062b7e }
 procedure Proc6_2B7E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00062bae }
 procedure Proc6_2BAE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00062bc5 }
 procedure Proc6_2BC5;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00062bdc }
 procedure Proc6_2BDC;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062c5f }
 procedure Proc6_2C5F;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062ceb }
 procedure Proc6_2CEB;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062d80 }
 procedure Proc6_2D80;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062e48 }
 procedure Proc6_2E48;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062e89 }
 procedure Proc6_2E89;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00062e94 }
 procedure Proc6_2E94;
 begin
   Far19C(PPtr6(@MAP.Pad54F6)^, $3F18);
@@ -1360,17 +1438,20 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0006307a }
 procedure Proc6_307A;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000636e5 }
 procedure Proc6_36E5;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000638a3 }
 procedure Proc6_38A3;
 begin
   Far1E21;
@@ -1385,6 +1466,7 @@ begin
   Far3EA6;
 end;
 
+{ ADDRESS: MAIN 0x000638da }
 procedure Proc6_38DA;
 begin
   Proc6_2E94;
@@ -1438,26 +1520,32 @@ procedure Far3CEC(var A0);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0006390e }
 procedure Proc6_390E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063932 }
 procedure Proc6_3932;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063974 }
 procedure Proc6_3974;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063c0f }
 procedure Proc6_3C0F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063c42 }
 procedure Proc6_3C42;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063e6f }
 procedure Proc6_3E6F;
 begin
 end;
@@ -1480,14 +1568,17 @@ begin
   P.Byte0 := 2;
 end;
 
+{ ADDRESS: MAIN 0x00063ec4 }
 procedure TCreditform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063f22 }
 procedure TCreditform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00063f80 }
 procedure TCreditform.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;

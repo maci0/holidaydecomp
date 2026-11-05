@@ -509,35 +509,43 @@ implementation
 
 uses GFX, KOMPASS, SEG24, MAP, DataVal;
 
+{ ADDRESS: MAIN 0x000b014d }
 procedure Proc11_014D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b015e }
 procedure Proc11_015E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b016f }
 procedure Proc11_016F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b01f8 }
 procedure Proc11_01F8;
 begin
   DataVal.G0092 := Word(A0.W2C);
 end;
 
+{ ADDRESS: MAIN 0x000b0209 }
 procedure Proc11_0209;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b021a }
 procedure Proc11_021A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b02b0 }
 procedure Proc11_02B0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b02cf }
 procedure Proc11_02CF;
 var
   X: LongInt;
@@ -641,84 +649,104 @@ begin
     Buf^.H2A87.Slot4(Buf^.F17C);
 end;
 
+{ ADDRESS: MAIN 0x000b0c7d }
 procedure Proc11_0C7D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0cbb }
 procedure Proc11_0CBB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0cdd }
 procedure Proc11_0CDD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0d23 }
 procedure Proc11_0D23;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0d6a }
 procedure Proc11_0D6A;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000b0db1 }
 procedure Proc11_0DB1;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000b0ded }
 procedure Proc11_0DED;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0ec4 }
 procedure Proc11_0EC4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b0f9b }
 procedure Proc11_0F9B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1072 }
 procedure Proc11_1072;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1149 }
 procedure Proc11_1149;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1220 }
 procedure Proc11_1220;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b12f7 }
 procedure Proc11_12F7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b13ce }
 procedure Proc11_13CE;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b14a5 }
 procedure Proc11_14A5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1584 }
 procedure Proc11_1584;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1663 }
 procedure Proc11_1663;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1742 }
 procedure Proc11_1742;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1821 }
 procedure Proc11_1821;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1900 }
 procedure Proc11_1900;
 begin
 end;
@@ -731,14 +759,17 @@ procedure Proc11_1A29;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1a30 }
 procedure Proc11_1A30;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b1ed0 }
 procedure Proc11_1ED0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b27e6 }
 procedure Proc11_27E6(var A0: TRecP);
 var
   S: string;
@@ -949,6 +980,7 @@ begin
   Far15e7(@MAP.Pad66CA[516], @A0.F2BAA, $FF);
 end;
 
+{ ADDRESS: MAIN 0x000b3b61 }
 procedure Proc11_3B61;
 begin
 end;
@@ -1157,6 +1189,7 @@ procedure Far2a2B(A0, A1, A2, A3, A4, A5, A6: Word; A7: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b19df }
 procedure TStartform.MaperstButtonClick(Sender: TObject);
 begin
 begin
@@ -1167,10 +1200,12 @@ begin
 end;
 end;
 
+{ ADDRESS: MAIN 0x000b1a29 }
 procedure TStartform.SprachButtonClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000b3cfd }
 procedure TStartform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   if ssLeft in Shift then
@@ -1207,6 +1242,7 @@ begin
     Far22C6(PThing412F(Bild)^);
 end;
 
+{ ADDRESS: MAIN 0x000b412f }
 procedure TStartform.BildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
   if Shift = [ssLeft] then
@@ -1216,6 +1252,7 @@ begin
       Far22C6(PThing412F(Bild)^);
 end;
 
+{ ADDRESS: MAIN 0x000b41fb }
 procedure TStartform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   if
@@ -1233,6 +1270,7 @@ begin
     Far22C6(PThing412F(Bild)^);
 end;
 
+{ ADDRESS: MAIN 0x000b4381 }
 procedure TStartform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 begin

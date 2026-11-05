@@ -398,10 +398,12 @@ procedure Arm28E5(X: Integer; var O: TOuter2);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001702e9 }
 function Proc23_02E9(A0, A1: Word; A2: Byte; A3: Pointer): Byte;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0017038d }
 procedure Proc23_038D;
 var Half: Integer;
 begin
@@ -412,16 +414,19 @@ begin
   DX := (X + Integer(Obj.F1B0)) mod 2;
 end;
 
+{ ADDRESS: MAIN 0x00170422 }
 function Proc23_0422(A0, A1: Word; A2: Pointer): Word;
 begin
   Proc23_0422 := ((A0 - A1 + 250) * 2) - POver23(A2)^.F1B0;
 end;
 
+{ ADDRESS: MAIN 0x00170443 }
 function Proc23_0443(A0, A1: Word; A2: Pointer): Word;
 begin
   Proc23_0443 := (A0 + A1) - POver23(A2)^.F1B2;
 end;
 
+{ ADDRESS: MAIN 0x0017045f }
 function Proc23_045F;
 begin
   if (MapTileA^[A0, A1] = 1) and (MapTileMid^[A0, A1] in Set1358) then
@@ -430,6 +435,7 @@ begin
     Proc23_045F := $30;
 end;
 
+{ ADDRESS: MAIN 0x001704b1 }
 function Proc23_04B1;
 var
   Bytes73: array[-3..8] of Byte absolute Pair0070;
@@ -448,6 +454,7 @@ begin
       Proc23_04B1 := Map0^[A0, A1] * 2 + $1A;
 end;
 
+{ ADDRESS: MAIN 0x001705f8 }
 function Proc23_05F8;
 begin
   if MapTileMid^[A0, A1] in Set1358 then
@@ -463,6 +470,7 @@ begin
     Proc23_05F8 := $30;
 end;
 
+{ ADDRESS: MAIN 0x00170684 }
 function Proc23_0684;
 var
   Bytes73: array[-3..8] of Byte absolute Pair0070;
@@ -478,6 +486,7 @@ begin
     Proc23_0684 := MapTileC^[A0, A1] * 2;
 end;
 
+{ ADDRESS: MAIN 0x00170786 }
 function Proc23_0786;
 begin
   if (MapTileA^[A0, A1] = 1) or
@@ -487,6 +496,7 @@ begin
     Proc23_0786 := $30;
 end;
 
+{ ADDRESS: MAIN 0x001707df }
 function Proc23_07DF;
 begin
   if (MapTileA^[A0, A1] >= $37) and (MapTileA^[A0, A1] <= $5E) then
@@ -498,6 +508,7 @@ begin
     Proc23_07DF := Map0^[A0, A1] * 2 + $1A;
 end;
 
+{ ADDRESS: MAIN 0x001708a8 }
 function Proc23_08A8;
 begin
   if (MapTileA^[A0, A1] >= $37) and (MapTileA^[A0, A1] <= $5E) then
@@ -509,6 +520,7 @@ begin
     Proc23_08A8 := $34;
 end;
 
+{ ADDRESS: MAIN 0x00170934 }
 function Proc23_0934;
 begin
   if (MapTileA^[A0, A1] >= $37) and (MapTileA^[A0, A1] <= $5E) then
@@ -517,6 +529,7 @@ begin
     Proc23_0934 := MapTileC^[A0, A1] * 2;
 end;
 
+{ ADDRESS: MAIN 0x0017098c }
 function Proc23_098C;
 begin
   if not (MapTileMid^[A0, A1] in Set1378) then
@@ -527,6 +540,7 @@ begin
     Proc23_098C := $30;
 end;
 
+{ ADDRESS: MAIN 0x00170a0a }
 function Proc23_0A0A(A0, A1: Word): Word;
 begin
   if ((MapTileA^[A0, A1] >= $0A) and (MapTileA^[A0, A1] <= $3A)) or
@@ -548,6 +562,7 @@ begin
     Proc23_0A0A := Map0^[A0, A1] * 2 + $1A;
 end;
 
+{ ADDRESS: MAIN 0x00170b57 }
 function Proc23_0B57;
 begin
   if not (MapTileMid^[A0, A1] in Set1378) then
@@ -565,6 +580,7 @@ begin
     Proc23_0B57 := $30;
 end;
 
+{ ADDRESS: MAIN 0x00170c10 }
 function Proc23_0C10(A0, A1: Word): Word;
 begin
   if ((MapTileA^[A0, A1] >= $0A) and (MapTileA^[A0, A1] <= $3A)) or
@@ -584,21 +600,25 @@ begin
     Proc23_0C10 := MapTileC^[A0, A1] * 2;
 end;
 
+{ ADDRESS: MAIN 0x00170d18 }
 function Proc23_0D18;
 begin
   Proc23_0D18 := $3A;
 end;
 
+{ ADDRESS: MAIN 0x00170d28 }
 function Proc23_0D28;
 begin
   Proc23_0D28 := $24 - (Integer(GFX.Proc6_180D(Integer(A0), Integer(A1))) * $24) div $FF;
 end;
 
+{ ADDRESS: MAIN 0x00170d53 }
 function Proc23_0D53;
 begin
   Proc23_0D53 := $3C;
 end;
 
+{ ADDRESS: MAIN 0x00170d63 }
 function Proc23_0D63;
 begin
   if MapTileMid^[A0, A1] in Set1378 then
@@ -607,11 +627,13 @@ begin
     Proc23_0D63 := $20 - (Integer(G5518^[A0, A1]) shl 5) div 100;
 end;
 
+{ ADDRESS: MAIN 0x00170dc2 }
 function Proc23_0DC2;
 begin
   Proc23_0DC2 := $38;
 end;
 
+{ ADDRESS: MAIN 0x00170dd2 }
 function Proc23_0DD2(A0, A1: Word): Word;
 begin
   if MapTileMid^[A0, A1] = $0C then
@@ -641,6 +663,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00170eeb }
 procedure Proc23_0EEB;
 var
   Col, Row: Integer;
@@ -688,51 +711,61 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x001711b4 }
 procedure Proc23_11B4;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_045F, Proc23_04B1, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x001711e1 }
 procedure Proc23_11E1;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_098C, Proc23_0A0A, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x0017120e }
 procedure Proc23_120E;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_0D18, Proc23_0D28, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x0017123b }
 procedure Proc23_123B;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_0DC2, Proc23_0DD2, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x00171268 }
 procedure Proc23_1268;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_0D53, Proc23_0D63, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x00171295 }
 procedure Proc23_1295;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_0786, Proc23_07DF, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x001712c2 }
 procedure Proc23_12C2;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_0B57, Proc23_0C10, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x001712ef }
 procedure Proc23_12EF;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_05F8, Proc23_0684, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x0017131c }
 procedure Proc23_131C;
 begin
   Proc23_0EEB(A0, A1, A2, A3, Proc23_08A8, Proc23_0934, POver23(A4)^);
 end;
 
+{ ADDRESS: MAIN 0x00171349 }
 procedure Proc23_1349;
 type TModeWords23 = array[0..0, 0..9] of Integer;
 var
@@ -753,6 +786,7 @@ begin
     View[ShortInt(Pred7c), 4], View[ShortInt(Pred7c), 5], $00660046);
 end;
 
+{ ADDRESS: MAIN 0x00171485 }
 procedure Proc23_1485;
 type TModeWords23 = array[0..0, 0..9] of Integer;
 var
@@ -765,54 +799,63 @@ begin
     View[ShortInt(Pred7c), 0] + X, View[ShortInt(Pred7c), 1] + Y, Obj);
 end;
 
+{ ADDRESS: MAIN 0x00171504 }
 procedure Proc23_1504(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($3F, A0, A1, A2, A3, 0, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171534 }
 procedure Proc23_1534(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($10, A0, A1, A2, A3, 0, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171564 }
 procedure Proc23_1564(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($1F, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171594 }
 procedure Proc23_1594(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($1F, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x001715c4 }
 procedure Proc23_15C4(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684(4, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x001715f4 }
 procedure Proc23_15F4(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($1F, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171624 }
 procedure Proc23_1624(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($1F, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171654 }
 procedure Proc23_1654(A0, A1, A2, A3: Word; A4: Pointer);
 begin
   Proc23_1684($1E, A0, A1, A2, A3, 1, A4);
   Far22C6(POver23(A4)^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x00171684 }
 procedure Proc23_1684(A0: Byte; A1, A2, A3, A4: Word; A5: Byte; A6: Pointer);
 begin
   Proc23_173E(A0,
@@ -823,21 +866,25 @@ begin
     A5, POver23(A6)^);
 end;
 
+{ ADDRESS: MAIN 0x001716fa }
 procedure Proc23_16FA;
 begin
   Proc23_17CF([0..5], A0, A1, A2, A3, 0, Obj);
 end;
 
+{ ADDRESS: MAIN 0x0017171b }
 procedure Proc23_171B;
 begin
   Proc23_1765([0..5], A0, A1, A2, A3, 0, 0, Obj);
 end;
 
+{ ADDRESS: MAIN 0x0017173e }
 procedure Proc23_173E(A0: Byte; A1, A2, A3, A4: Word; A5: Byte; var A6: TOver23);
 begin
   Proc23_1765(TSet7(A0), A1, A2, A3, A4, A5, 1, A6);
 end;
 
+{ ADDRESS: MAIN 0x00171765 }
 procedure Proc23_1765;
 begin
   if A7.F199 in A0 then
@@ -849,6 +896,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x001717cf }
 procedure Proc23_17CF(A0: TSet7; A1, A2, A3, A4: Word; A5: Byte; var A6: TOver23);
 begin
   if A6.F199 in A0 then
@@ -880,10 +928,12 @@ begin
     end;
 end;
 
+{ ADDRESS: MAIN 0x00171a49 }
 procedure Proc23_1A49(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171a6e }
 procedure Proc23_1A6E;
 var Dest: Word;
 begin
@@ -943,30 +993,37 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00171e25 }
 procedure Proc23_1E25;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171e4a }
 procedure Proc23_1E4A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171e73 }
 procedure Proc23_1E73;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171e96 }
 procedure Proc23_1E96;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171f52 }
 procedure Proc23_1F52;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0017200e }
 procedure Proc23_200E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001720a5 }
 procedure Proc23_20A5;
 begin
   if Obj.F213 = 0 then
@@ -975,6 +1032,7 @@ begin
     Proc23_31F8(Obj.F184, 7, Obj.F20A, Obj);
 end;
 
+{ ADDRESS: MAIN 0x001720f2 }
 procedure Proc23_20F2;
 begin
 end;
@@ -990,10 +1048,12 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x001721c7 }
 procedure Proc23_21C7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001721fa }
 procedure Proc23_21FA;
 begin
 end;
@@ -1032,14 +1092,17 @@ begin
   Proc23_21FA(A6);
 end;
 
+{ ADDRESS: MAIN 0x0017257f }
 procedure Proc23_257F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001725a8 }
 procedure Proc23_25A8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001725cb }
 function Proc23_25CB(A0: POver23): LongInt;
 var
   L1, L2, L3, L4, L5, Q: LongInt;
@@ -1053,6 +1116,7 @@ begin
   Proc23_25CB := Q;
 end;
 
+{ ADDRESS: MAIN 0x001726a8 }
 function Proc23_26A8(A0: POver23; A1: LongInt): LongInt;
 var
   L1, L2, L3, L4, L5, P: LongInt;
@@ -1066,6 +1130,7 @@ begin
   Proc23_26A8 := L3;
 end;
 
+{ ADDRESS: MAIN 0x00172785 }
 procedure Proc23_2785;
 var Src, Dest: Word;
 begin
@@ -1076,6 +1141,7 @@ begin
   TImage(Obj.F188).Refresh;
 end;
 
+{ ADDRESS: MAIN 0x0017281c }
 procedure Proc23_281C;
 begin
   if Obj.F213 = 0 then
@@ -1084,6 +1150,7 @@ begin
     Proc23_31F8(Obj.F188, $0D, Obj.F1FE, Obj);
 end;
 
+{ ADDRESS: MAIN 0x00172869 }
 procedure Proc23_2869;
 var T: Integer;
 begin
@@ -1109,10 +1176,12 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x0017293e }
 procedure Proc23_293E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00172971 }
 procedure Proc23_2971(A0: Pointer);
 begin
 end;
@@ -1170,6 +1239,7 @@ begin
   Proc23_2971(A6);
 end;
 
+{ ADDRESS: MAIN 0x0017303e }
 procedure Proc23_303E(A0: ShortInt; A1: POver23);
 var
   TB, TA: Word;
@@ -1214,6 +1284,7 @@ begin
   Far22C6(A1^.F18C^);
 end;
 
+{ ADDRESS: MAIN 0x001731f8 }
 procedure Proc23_31F8;
 var Dest, Src: Word;
 begin
@@ -1229,10 +1300,12 @@ begin
     A3.F20E^[A3.F213, A1].W1, $00CC0020);
 end;
 
+{ ADDRESS: MAIN 0x00173363 }
 procedure Proc23_3363;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0017346a }
 procedure Proc23_346A(A0: PPtr23; A1: ShortInt; A2: PPtr23; A3: POver23);
 var
   T1, T2: Word;
@@ -1245,6 +1318,7 @@ begin
           T2, 0, 0, $CC, $20);
 end;
 
+{ ADDRESS: MAIN 0x00173553 }
 procedure Proc23_3553;
 begin
 end;
@@ -1292,6 +1366,7 @@ procedure Proc23_3D2B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173e73 }
 procedure Proc23_3E73;
 begin
   TUebersichtsmap2(@Obj).Height := 0;
@@ -1302,10 +1377,12 @@ begin
   TUebersichtsmap2(@Obj).Height := Integer(Obj.F20E^[Obj.F213, 0].W3) + 1;
 end;
 
+{ ADDRESS: MAIN 0x00173eee }
 procedure Proc23_3EEE(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173f7f }
 procedure Proc23_3F7F;
 begin
   Proc20_30B6($E);
@@ -1314,6 +1391,7 @@ begin
   TControl(@MAP.P6532^).BringToFront;
 end;
 
+{ ADDRESS: MAIN 0x00173fab }
 procedure Proc23_3FAB;
 begin
   Obj.F213 := 0;
@@ -1335,6 +1413,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00174079 }
 procedure Proc23_4079(A0: POver23);
 begin
   A0^.F1B0 := Proc6_0F19(Proc6_0F53((PRec6532(P6532)^.W408 + 10) * 2 - A0^.F19B div 2, $3EA - A0^.F19B), 0);
@@ -1349,10 +1428,12 @@ begin
   Proc20_30B6($D);
 end;
 
+{ ADDRESS: MAIN 0x001741ad }
 procedure Proc23_41AD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00174538 }
 procedure Proc23_4538(A0: POver23);
 var
   Buf: string;
@@ -1526,11 +1607,13 @@ procedure TThing23.Slot12;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00174b29 }
 procedure Proc23_4B29;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00174c59 }
 procedure Proc23_4C59;
 begin
 end;
@@ -1540,6 +1623,7 @@ procedure Proc23_4C95;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00174e34 }
 procedure Proc23_4E34(var A0: file; var A1: TOver23);
 begin
   BlockWrite(A0, A1.F198, 1);
@@ -1571,6 +1655,7 @@ begin
   BlockWrite(A0, A1.Pad212, 1);
 end;
 
+{ ADDRESS: MAIN 0x001750de }
 procedure Proc23_50DE;
 begin
 end;
@@ -1639,51 +1724,62 @@ procedure Far201C(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001737f5 }
 procedure TUebersichtsmap2.MapBildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001739b1 }
 procedure TUebersichtsmap2.MapBildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173aab }
 procedure TUebersichtsmap2.MapBildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   if Button = mbLeft then Proc4_04B0(@MAP.P6532^);
 end;
 
+{ ADDRESS: MAIN 0x0017222b }
 procedure TUebersichtsmap2.NSScrollBildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00172421 }
 procedure TUebersichtsmap2.NSScrollbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001724a1 }
 procedure TUebersichtsmap2.NSScrollBildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0017216e }
 procedure TUebersichtsmap2.NSScrolltimerTimer(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001728e5 }
 procedure TUebersichtsmap2.WOScrolltimerTimer(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171c74 }
 procedure TUebersichtsmap2.UmschaltbildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00171d21 }
 procedure TUebersichtsmap2.UmschaltbildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001729a2 }
 procedure TUebersichtsmap2.MenubildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 var T1, T2: Word;
 begin
@@ -1775,23 +1871,28 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00172e01 }
 procedure TUebersichtsmap2.MenubildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00172e99 }
 procedure TUebersichtsmap2.MenubildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173ac3 }
 procedure TUebersichtsmap2.UeberschriftbildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173c9b }
 procedure TUebersichtsmap2.UeberschriftbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00173d2b }
 procedure TUebersichtsmap2.UeberschriftbildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
@@ -1823,6 +1924,7 @@ begin
   State.F19A := 0;
 end;
 
+{ ADDRESS: MAIN 0x00174c95 }
 procedure TUebersichtsmap2.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;

@@ -251,6 +251,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00080d0f }
 function Proc8_0D0F(Src: string): Boolean;
 var
   I: Integer;
@@ -273,48 +274,59 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00080180 }
 procedure Proc8_0180;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080192 }
 procedure Proc8_0192;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080244 }
 procedure Proc8_0244;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080286 }
 procedure Proc8_0286;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000802c8 }
 procedure Proc8_02C8;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x000802da }
 procedure Proc8_02DA;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00080327 }
 procedure Proc8_0327;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000803e5 }
 procedure Proc8_03E5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080460 }
 procedure Proc8_0460;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000804d9 }
 procedure Proc8_04D9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000805a4 }
 procedure Proc8_05A4;
 begin
 end;
@@ -335,48 +347,57 @@ procedure Proc8_0CD3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080e03 }
 procedure Proc8_0E03;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080f27 }
 procedure Proc8_0F27;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00080fb0 }
 procedure Proc8_0FB0;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00080fbd }
 procedure Proc8_0FBD;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00080fff }
 procedure Proc8_0FFF;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0008106f }
 procedure Proc8_106F;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x000810e5 }
 procedure Proc8_10E5;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00081175 }
 procedure Proc8_1175;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000811f2 }
 procedure Proc8_11F2;
 begin
 end;
@@ -389,14 +410,17 @@ procedure Proc8_1525;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008154d }
 procedure Proc8_154D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081564 }
 procedure Proc8_1564(A0, A1: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008156b }
 procedure Proc8_156B(A0, A1: Word);
 begin
 end;
@@ -405,34 +429,42 @@ procedure Proc8_1572;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081853 }
 procedure Proc8_1853;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081b5c }
 procedure Proc8_1B5C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081ba5 }
 procedure Proc8_1BA5;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081bc2 }
 procedure Proc8_1BC2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081bdf }
 procedure Proc8_1BDF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081ca7 }
 procedure Proc8_1CA7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081d49 }
 procedure Proc8_1D49(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081f38 }
 procedure Proc8_1F38(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[1]);
@@ -445,6 +477,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x00081ffd }
 procedure Proc8_1FFD(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -457,6 +490,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x000820c2 }
 procedure Proc8_20C2(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -469,6 +503,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x00082187 }
 procedure Proc8_2187(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -481,6 +516,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x0008224c }
 procedure Proc8_224C(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -493,6 +529,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x00082311 }
 procedure Proc8_2311(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -505,6 +542,7 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x000823d6 }
 procedure Proc8_23D6(A0, A1: Word);
 begin
   Proc24_06FE(PHLad8(G6EE0)^.L17C, @PHLad8(G6EE0)^.Items[0]);
@@ -517,26 +555,32 @@ begin
   Proc8_1D49(G6EE0);
 end;
 
+{ ADDRESS: MAIN 0x000824a8 }
 procedure Proc8_24A8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00082517 }
 procedure Proc8_2517;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00082579 }
 procedure Proc8_2579;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008284c }
 procedure Proc8_284C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00082bf0 }
 procedure Proc8_2BF0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008310a }
 procedure Proc8_310A(P: PBlk8);
 begin
   Far20C4(P^.FC88);
@@ -546,10 +590,12 @@ begin
   Far20C4(P^.F18C);
 end;
 
+{ ADDRESS: MAIN 0x0008315c }
 procedure Proc8_315C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083183 }
 procedure Proc8_3183;
 begin
 end;
@@ -581,28 +627,34 @@ Tail:
 Done:
 end;
 
+{ ADDRESS: MAIN 0x000834af }
 procedure Proc8_34AF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008355f }
 procedure Proc8_355F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008372c }
 procedure Proc8_372C(P: PRec8);
 begin
   Far19C(P^.Buf, $400);
 end;
 
+{ ADDRESS: MAIN 0x00083748 }
 procedure Proc8_3748(A0: ShortInt; A1: PRec8);
 begin
   Proc8_37D8(PGrid8(A1^.Buf)^[A0], 0, A1);
 end;
 
+{ ADDRESS: MAIN 0x0008376e }
 procedure Proc8_376E(A0: Word; A1: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000837d8 }
 procedure Proc8_37D8(A0: string; A1: Word; A2: PRec8);
 begin
   A2^.W180 := A1;
@@ -626,20 +678,24 @@ procedure Far1B39(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000838a1 }
 procedure Proc8_38A1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008390f }
 procedure Proc8_390F(P: PRec8);
 begin
   Far56CE(P);
   Proc8_372C(P);
 end;
 
+{ ADDRESS: MAIN 0x00083a45 }
 procedure Proc8_3A45;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083bac }
 procedure Proc8_3BAC(A0: Pointer);
 begin
 end;
@@ -659,14 +715,17 @@ begin
   P^ := 2;
 end;
 
+{ ADDRESS: MAIN 0x00083d02 }
 procedure Proc8_3D02;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083db1 }
 procedure Proc8_3DB1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083dc7 }
 procedure Proc8_3DC7;
 begin
 end;
@@ -677,51 +736,63 @@ begin
     Far17E1(0, Self);
 end;
 
+{ ADDRESS: MAIN 0x000812be }
 procedure TDateimenue.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081525 }
 procedure TDateimenue.FormHide;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0008073c }
 procedure TDateimenue.DateimenuebildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000809ca }
 procedure TDateimenue.DateimenuebildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080a4c }
 procedure TDateimenue.DateimenuebildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00080cd3 }
 procedure TDateimenue.EditierfensterKeyDown;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00081572 }
 procedure TDateimenue.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083bf4 }
 procedure TPauseform.PausebildClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083c05 }
 procedure TPauseform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083c16 }
 procedure TPauseform.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caFree;
 end;
 
+{ ADDRESS: MAIN 0x000831bc }
 procedure Thighscoreform.BildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00083347 }
 procedure Thighscoreform.BildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;

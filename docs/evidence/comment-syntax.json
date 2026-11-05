@@ -1,0 +1,26 @@
+{
+  "target": "compiler-syntax-control",
+  "toolchain": "delphi-1.0",
+  "compiler": "Delphi Compiler Version 8.0",
+  "dcc_args": [
+    "-$S-"
+  ],
+  "command": "uv run --frozen rebrew build delphi .scratch/comment-check/CMTCHECK.DPR --output .scratch/comment-check/CMTCHECK.EXE --dcc-args='-$S-'",
+  "controls": [
+    {
+      "syntax": "//",
+      "source": "program CMTCHECK;\n// Delphi 1 line-comment compatibility check.\nprocedure CheckComment;\nbegin\n  // Comment inside a routine.\nend;\nbegin\n  CheckComment; // Comment after a statement.\nend.\n",
+      "source_sha256": "81b9232d952767289e5801f2b97288e70922f97d291996019dc4929c26d0f167",
+      "exit_code": 2,
+      "result": "Error 36: BEGIN expected at the first line comment; no executable produced"
+    },
+    {
+      "syntax": "{ ... }",
+      "source": "program CMTCHECK;\n{ Delphi 1 block-comment compatibility check. }\nprocedure CheckComment;\nbegin\n  { ADDRESS: PROBE 0x00000000 }\nend;\nbegin\n  CheckComment; { Comment after a statement. }\nend.\n",
+      "source_sha256": "159636834c4d9cb5566e85295a2ce136b505b81b96d6660682c103a6a01bf8a4",
+      "exit_code": 0,
+      "executable_bytes": 2816,
+      "result": "Stock Delphi 1 compile succeeded"
+    }
+  ]
+}

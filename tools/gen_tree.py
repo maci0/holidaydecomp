@@ -20657,6 +20657,22 @@ def generated_units() -> list[tuple[int, str, tuple[str, ...], str]]:
     return units
 
 
+def annotate_addresses(text: str, file: str, metadata: dict) -> str:
+    """Reference managed native identities without inventing addresses for helpers."""
+    interface, separator, implementation = text.partition("\nimplementation\n")
+    if not separator:
+        return text
+    for (module, va), row in sorted(metadata.items()):
+        if row.get("file") != file or not row.get("symbol"):
+            continue
+        pattern = r"(?mi)^[ \t]*(?:procedure|function|constructor|destructor)\s+" + re.escape(row["symbol"]) + r"\b"
+        comment = f"{{ ADDRESS: {module} 0x{va:08x} }}\n"
+        implementation, count = re.subn(pattern, lambda match: comment + match[0], implementation, count=1)
+        if count != 1:
+            raise ValueError(f"Native binding {module}.{va:#x} has no definition in {file}; refresh metadata")
+    return interface + separator + implementation
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
@@ -20883,10 +20899,14 @@ def main() -> int:
         for cls in form_classes
     )
     files["HOLIDAY.DPR"] = DPR_TEMPLATE.format(
-        count=len(units), last=len(units) - 1, uses="\n".join(unit_line),
+        count=len(units), last=max(UNITS), uses="\n".join(unit_line),
         formvars=("var\n" + variables + "\n\n" if variables else ""),
         formcreates=creates,
     )
+    from rebrew.metadata.functions import load_metadata
+    metadata = load_metadata(REPO)
+    files = {name: annotate_addresses(text, f"src/main/{name}", metadata)
+             for name, text in files.items()}
 
     # A previous run's units whose names changed (a segment split into per-form
     # units) would otherwise linger and still be staged into the build.

@@ -319,14 +319,17 @@ begin
   ItemAt14 := P^.Items[N];
 end;
 
+{ ADDRESS: MAIN 0x000e01e8 }
 procedure Proc14_01E8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e01fc }
 procedure Proc14_01FC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0294 }
 function Proc14_0294(A0: Word; A1: Word; A2: ShortInt; var A3: TRec0DEA): Byte;
 begin
   Result := Far6D7(A0, A1, A3.Items^[A2].W0, A3.Items^[A2].W2,
@@ -531,6 +534,7 @@ procedure Proc14_0ADD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0b76 }
 function Proc14_0B76(k: ShortInt; P: PRec14): Pointer;
 begin
   if (k >= $11) and (k <= $75) then
@@ -559,11 +563,13 @@ begin
     Pick := f223;
 end;
 
+{ ADDRESS: MAIN 0x000e0c8b }
 function Proc14_0C8B(N: Byte; var P: TRec0DEA): Word;
 begin
   Proc14_0C8B := FarCD8(Far14C5(FarCCD(N, @P)));
 end;
 
+{ ADDRESS: MAIN 0x000e0cbd }
 function Proc14_0CBD(N: Byte; var P: TRec0DEA): Word;
 begin
   Proc14_0CBD := Far119D(FarCE3(FarCFF(N, @P)));
@@ -599,6 +605,7 @@ begin
   Far119D := 0;
 end;
 
+{ ADDRESS: MAIN 0x000e0cef }
 procedure Proc14_0CEF(A0: ShortInt; P: PRec0DEA);
 var
   Vcbd: Word;
@@ -622,6 +629,7 @@ procedure Far12DA(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0dea }
 procedure Proc14_0DEA(S: ShortInt; R: ShortInt; Q: String; var P: TRec0DEA);
 var
   T: Pointer;
@@ -677,6 +685,7 @@ procedure Far1375(A0: Pointer; A1, A2, A3, A4, A5, A6: Word; A7: String);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1100 }
 procedure Proc14_1100(A0: Byte; var A1: TRec0DEA);
 begin
   Proc14_0CEF(A0, @A1);
@@ -687,10 +696,12 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000e1178 }
 procedure Proc14_1178;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1345 }
 function Proc14_1345(A0: Byte; var A1: TRec1345): LongInt;
 var
   I: Byte;
@@ -711,16 +722,19 @@ begin
   Far19B6 := 0;
 end;
 
+{ ADDRESS: MAIN 0x000e13f1 }
 function Proc14_13F1(X: ShortInt; P: PFar14L): LongInt;
 begin
   Proc14_13F1 := P^.Items[X];
 end;
 
+{ ADDRESS: MAIN 0x000e1419 }
 procedure Proc14_1419(I: ShortInt; N: LongInt; G: PFar14L);
 begin
   G^.Items[I] := G^.Items[I] + N;
 end;
 
+{ ADDRESS: MAIN 0x000e1452 }
 procedure Proc14_1452(P: Pointer);
 var
   I: ShortInt;
@@ -740,6 +754,7 @@ procedure Far15BD(var A0: TAcc1452);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e14b4 }
 procedure Proc14_14B4(A0: Byte; A1: Word; A2: Word; var A3: TRec14B4);
 var
   W1: Word;
@@ -800,6 +815,7 @@ begin
   Far16FE := 0;
 end;
 
+{ ADDRESS: MAIN 0x000e151b }
 procedure Proc14_151B(K: Byte; D, C, B, A: Integer; var P: TFar14);
 var
   i: Integer;
@@ -843,18 +859,22 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000e16b7 }
 procedure Proc14_16B7(var A0: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1ba5 }
 procedure Proc14_1BA5(var A0: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1d1f }
 procedure Proc14_1D1F(var A0: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1eeb }
 procedure Proc14_1EEB(var P: TRec300);
 begin
   Proc14_1BA5(P);
@@ -870,22 +890,27 @@ procedure Far1F73(var A0: TThing300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1f3f }
 procedure Proc14_1F3F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e1f79 }
 procedure Proc14_1F79(P: PFar14L);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e20e7 }
 procedure Proc14_20E7(A0: Byte; var P: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e210a }
 procedure Proc14_210A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e2617 }
 procedure Proc14_2617(var P: TFar14L);
 var
   T: Word;
@@ -894,6 +919,7 @@ begin
     Proc14_1452(@P);
 end;
 
+{ ADDRESS: MAIN 0x000e2630 }
 procedure Proc14_2630(var P: TFar14L);
 var
   T: Word;
@@ -903,6 +929,7 @@ begin
   Proc14_1F79(@P);
 end;
 
+{ ADDRESS: MAIN 0x000e2653 }
 procedure Proc14_2653(P: PFar14L);
 var
   I, J: ShortInt;
@@ -918,6 +945,7 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x000e269d }
 procedure Proc14_269D(P: PFar14L);
 var
   I: ShortInt;
@@ -936,14 +964,17 @@ begin
   Proc14_2617(P^);
 end;
 
+{ ADDRESS: MAIN 0x000e270f }
 procedure Proc14_270F(var A0: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e28d3 }
 procedure Proc14_28D3(var A0: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e2ab8 }
 procedure Proc14_2AB8(var P: TRec2AB8);
 begin
   P.A := Far2AD4(1);
@@ -971,6 +1002,7 @@ begin
   Far317B := 0;
 end;
 
+{ ADDRESS: MAIN 0x000e2b11 }
 procedure Proc14_2B11(A0: Byte; var P: TRec300);
 begin
   if A0 <> P.F188 then
@@ -978,22 +1010,27 @@ begin
   Proc14_2B3A(P);
 end;
 
+{ ADDRESS: MAIN 0x000e2b3a }
 procedure Proc14_2B3A(var P: TRec300);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e2bb4 }
 procedure Proc14_2BB4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e2bfa }
 procedure Proc14_2BFA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e2e6c }
 procedure Proc14_2E6C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e38d2 }
 procedure Proc14_38D2(var P: TRec38D2);
 var
   T: Word;
@@ -1074,6 +1111,7 @@ procedure Proc14_39BF;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e3b27 }
 procedure Proc14_3B27(var A0, A1: TRec3B27);
 begin
   Far3B5A(A0, @A1.Pad1[$188], 1, NIL);
@@ -1118,6 +1156,7 @@ procedure Far3C12(var A0: TRec3B27; var A1: TThing3B27; A2: Word; A3: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e3bf8 }
 procedure Proc14_3BF8(var A0, A1: TRec3B27);
 begin
   Far3C2B(A0, @A1.Pad1[$188], 1, NIL);
@@ -1162,40 +1201,49 @@ procedure FarCB7(var A0: TRec3B27; var A1: TThing3B27; A2: Word; A3: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0300 }
 procedure TGeldmenuform.BildimageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e04d3 }
 procedure TGeldmenuform.BildimageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0820 }
 procedure TGeldmenuform.UeberschriftImageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e08e0 }
 procedure TGeldmenuform.UeberschriftImageMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e096d }
 procedure TGeldmenuform.UeberschriftImageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e09f7 }
 procedure TGeldmenuform.MenuImageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0add }
 procedure TGeldmenuform.MenuImageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e39bf }
 procedure TGeldmenuform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000e0ad5 }
 procedure TGeldmenuform.MenuImageMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 { Original two-byte frame; local name and type are unresolved. }
 var Reserved: Integer;

@@ -69,43 +69,51 @@ implementation
 
 uses DATEN, GFX, SCHLUSS, SEG15, ANIM, MAP;
 
+{ ADDRESS: MAIN 0x00150002 }
 procedure Proc21_0002;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00150167 }
 procedure Proc21_0167;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150221 }
 procedure Proc21_0221;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00150373 }
 procedure Proc21_0373;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001503a6 }
 procedure Proc21_03A6;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00150523 }
 procedure Proc21_0523;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0015064b }
 procedure Proc21_064B;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0015078a }
 function Proc21_078A(A0: Byte): Boolean;
 begin
   Proc21_078A := False;
@@ -113,18 +121,21 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150927 }
 procedure Proc21_0927;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150987 }
 procedure Proc21_0987(A0: Byte);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150cb6 }
 function Proc21_0CB6(Value: Byte; RowOrigin, ColOrigin: Integer; RowSpan, ColSpan: Byte): Boolean;
 var
   I, J: Integer;
@@ -170,42 +181,49 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150e30 }
 procedure Proc21_0E30;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00150f67 }
 procedure Proc21_0F67;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151098 }
 procedure Proc21_1098;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001511f7 }
 procedure Proc21_11F7;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151269 }
 procedure Proc21_1269;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151309 }
 procedure Proc21_1309;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001513f6 }
 function Proc21_13F6(A0: Byte): Boolean;
 begin
   Proc21_13F6 := False;
@@ -213,6 +231,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151454 }
 function Proc21_1454(A0: Byte): Boolean;
 begin
   Proc21_1454 := False;
@@ -220,12 +239,14 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001514b2 }
 procedure Proc21_14B2;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0015163b }
 function Proc21_163B(A0: Byte): Word;
 begin
   Proc21_163B := 0;
@@ -233,6 +254,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0015173b }
 function Proc21_173B(A0: Byte): Boolean;
 begin
   Proc21_173B := False;
@@ -240,6 +262,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151b0a }
 function Proc21_1B0A(A0: Byte): Boolean;
 begin
   Proc21_1B0A := False;
@@ -247,18 +270,21 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151ded }
 procedure Proc21_1DED;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00151f44 }
 procedure Proc21_1F44;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00152060 }
 function Proc21_2060(A0: Byte): Boolean;
 begin
   Proc21_2060 := False;
@@ -266,6 +292,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0015207b }
 function Proc21_207B(A0: Byte): Boolean;
 begin
   Proc21_207B := False;
@@ -273,6 +300,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001521de }
 function Proc21_21DE(A0: Byte): Boolean;
 begin
   Proc21_21DE := False;
@@ -280,6 +308,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00152463 }
 procedure Proc21_2463(A0: Byte);
 const
   M11 = 'WLBNichtstun';
@@ -466,23 +495,27 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00152a60 }
 procedure Proc21_2A60(A0: Byte);
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00152ade }
 function Proc21_2ADE(var X: TFit21; A0: Word): Boolean;
 begin
   Proc21_2ADE := False;
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00152cc1 }
 procedure Proc21_2CC1;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00152d5a }
 procedure Proc21_2D5A(A0: Byte);
 const
   Msg2 = 'WLTNaechstenSchrittubelegen';
@@ -566,37 +599,45 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0015302e }
 procedure Proc21_302E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00153080 }
 procedure Proc21_3080;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001532ec }
 procedure Proc21_32EC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00153558 }
 procedure Proc21_3558;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001537da }
 procedure Proc21_37DA;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0015388b }
 procedure Proc21_388B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00153a6c }
 procedure Proc21_3A6C;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00150582 }
 function Proc21_0582(P: PFitting21; Amount, Code: Byte): Boolean;
 var
   Ok: Boolean;

@@ -17,6 +17,7 @@ src/main/*
 !src/main/HOLIDAY.DPR
 !src/main/function_structure.json
 !src/main/function_merges.toml
+!src/main/forms/
 src/main/DATAVAL.PAS
 src/main/POOLS.PAS
 src/main/TABLES.PAS
@@ -38,3 +39,5 @@ rebrew-*.toml.lock
 *.OBJ
 *.map
 *.MAP
+!src/main/forms/*.DFM
+/.obsidian/

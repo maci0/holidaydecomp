@@ -252,6 +252,7 @@ implementation
 uses ABRECHNE, DATEN, BAUFEN, AUKTION, GFX, KOMPASS, HIGHSCOR, HAUS, DARSTELL, SCHLUSS, GELD,
   SEG15, MENU, ANIM, EREIGN, SOUND, MAP, UEBERMAP, SEG24, DataVal;
 
+{ ADDRESS: MAIN 0x00040456 }
 procedure Proc4_0456;
 begin
   if A0.B10F <> 0 then
@@ -260,23 +261,28 @@ begin
     Proc7_3243(MAP.G6620^);
 end;
 
+{ ADDRESS: MAIN 0x00040480 }
 procedure Proc4_0480;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004049e }
 procedure Proc4_049E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000404b0 }
 procedure Proc4_04B0;
 begin
   Proc10_2700;
 end;
 
+{ ADDRESS: MAIN 0x000404bc }
 procedure Proc4_04BC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004050b }
 procedure Proc4_050B;
 begin
 end;
@@ -296,6 +302,7 @@ procedure Proc4_0549;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040550 }
 procedure Proc4_0550;
 var
   Spare550: LongInt;
@@ -306,6 +313,7 @@ procedure Proc4_0558;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004055f }
 procedure Proc4_055F;
 begin
 end;
@@ -323,40 +331,49 @@ procedure Proc4_0595;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000405a7 }
 procedure Proc4_05A7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004067c }
 procedure Proc4_067C;
 begin
   Proc4_0C8B(A0);
   Proc4_1413(A0);
 end;
 
+{ ADDRESS: MAIN 0x00040697 }
 procedure Proc4_0697;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000406f1 }
 procedure Proc4_06F1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004074d }
 procedure Proc4_074D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040787 }
 procedure Proc4_0787;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000407dc }
 procedure Proc4_07DC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040a55 }
 procedure Proc4_0A55;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040b0f }
 procedure Proc4_0B0F;
 begin
   A3.W1BE := A0;
@@ -365,6 +382,7 @@ begin
   Proc4_0BF4(A3);
 end;
 
+{ ADDRESS: MAIN 0x00040b38 }
 function Proc4_0B38(var A0: TState4): LongInt;
 var
   V1, V2, V3, C16, T, R: LongInt;
@@ -378,14 +396,17 @@ begin
   Result := R;
 end;
 
+{ ADDRESS: MAIN 0x00040bf4 }
 procedure Proc4_0BF4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040c8b }
 procedure Proc4_0C8B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040cf7 }
 procedure Proc4_0CF7;
 var
   T, Diff: Integer;
@@ -437,10 +458,12 @@ procedure Proc4_10B6;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000411dd }
 procedure Proc4_11DD;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041297 }
 procedure Proc4_1297;
 begin
   A3.W1C4 := A0;
@@ -449,6 +472,7 @@ begin
   Proc4_137C(A3);
 end;
 
+{ ADDRESS: MAIN 0x000412c0 }
 function Proc4_12C0(var A0: TState4): LongInt;
 var
   V1, V2, V3, C16, T, R: LongInt;
@@ -462,14 +486,17 @@ begin
   Result := R;
 end;
 
+{ ADDRESS: MAIN 0x0004137c }
 procedure Proc4_137C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041413 }
 procedure Proc4_1413;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004147f }
 procedure Proc4_147F;
 var
   T, Diff: Integer;
@@ -556,19 +583,23 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00041c79 }
 procedure Proc4_1C79;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00041ce9 }
 procedure Proc4_1CE9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041df3 }
 procedure Proc4_1DF3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041e4f }
 procedure Proc4_1E4F;
 begin
 end;
@@ -581,20 +612,24 @@ procedure Far123D(A0: Word; var A1);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000424a0 }
 procedure Proc4_24A0;
 begin
   Far123D(0, PObj18C(PTRec6532(P6532)^.F190)^);
 end;
 
+{ ADDRESS: MAIN 0x000424b7 }
 procedure Proc4_24B7;
 begin
   Far123D(1, PObj18C(PTRec6532(P6532)^.F190)^);
 end;
 
+{ ADDRESS: MAIN 0x00042501 }
 procedure Proc4_2501;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004283b }
 procedure Proc4_283B;
 begin
 end;
@@ -612,6 +647,7 @@ begin
   A1 := 2;
 end;
 
+{ ADDRESS: MAIN 0x00042909 }
 procedure Proc4_2909;
 begin
   BlockWrite(A0, A1.L408, 4);
@@ -637,6 +673,7 @@ begin
   BlockWrite(A0, A1.B51B, 1);
 end;
 
+{ ADDRESS: MAIN 0x00042b1d }
 procedure Proc4_2B1D;
 begin
   BlockRead(A0, A1.L408, 4);
@@ -663,18 +700,21 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00042d31 }
 procedure Proc4_2D31;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00042d4c }
 procedure Proc4_2D4C;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00042daa }
 procedure Proc4_2DAA;
 begin
 end;
@@ -707,27 +747,33 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0004347d }
 procedure Proc4_347D;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x000434ca }
 procedure Proc4_34CA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043588 }
 procedure Proc4_3588;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043603 }
 procedure Proc4_3603;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004367c }
 procedure Proc4_367C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000436ce }
 procedure Proc4_36CE;
 begin
 end;
@@ -744,6 +790,7 @@ procedure Proc4_395F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043aad }
 procedure Proc4_3AAD;
 begin
 end;
@@ -761,147 +808,182 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00043dc4 }
 procedure Proc4_3DC4;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00043ea6 }
 procedure Proc4_3EA6;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043f02 }
 procedure Proc4_3F02;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043f47 }
 procedure Proc4_3F47;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043f4e }
 procedure Proc4_3F4E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043b5f }
 procedure TEndeform.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043d05 }
 procedure TEndeform.FormHide;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000437dd }
 procedure TEndeform.EndeImageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000438d4 }
 procedure TEndeform.EndeImageMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004395f }
 procedure TEndeform.EndeImageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043d30 }
 procedure TEndeform.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004051d }
 procedure THauptschirm.InfoboxOKButtonClick;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004052e }
 procedure THauptschirm.InfoboxInselbuttonClick;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040549 }
 procedure THauptschirm.InselboxOkbuttonClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040558 }
 procedure THauptschirm.GlobalboxOkbuttonClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040566 }
 procedure THauptschirm.InfoboxGlobalbuttonClick(Sender: TObject);
 begin
   GlobalInfo;
 end;
 
+{ ADDRESS: MAIN 0x00040577 }
 procedure THauptschirm.CloseButtonDblClick;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040595 }
 procedure THauptschirm.MinimizeButtonClick(Sender: TObject);
 begin
   Application.Minimize;
 end;
 
+{ ADDRESS: MAIN 0x00040d92 }
 procedure THauptschirm.NSScrollBildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00040fa2 }
 procedure THauptschirm.NSScrollbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000410b6 }
 procedure THauptschirm.NSScrollBildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004151a }
 procedure THauptschirm.WOScrollBildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004172a }
 procedure THauptschirm.WOScrollbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004181f }
 procedure THauptschirm.WOScrollBildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041946 }
 procedure THauptschirm.ButtonImageClick(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041952 }
 procedure THauptschirm.ButtonImageMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041984 }
 procedure THauptschirm.HauptbildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041ae6 }
 procedure THauptschirm.HauptbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041b31 }
 procedure THauptschirm.HauptbildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041b8e }
 procedure THauptschirm.UeberschriftbildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041bd9 }
 procedure THauptschirm.UeberschriftbildMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041c58 }
 procedure THauptschirm.UeberschriftbildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState;
   X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00041e9b }
 procedure THauptschirm.AnimationsTimerTimer(Sender: TObject);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00042866 }
 procedure THauptschirm.FormShow;
 begin
 end;
 
+{ ADDRESS: MAIN 0x000428bf }
 procedure THauptschirm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   CloseObjects[0].Free;
@@ -911,26 +993,32 @@ begin
   Action := caFree;
 end;
 
+{ ADDRESS: MAIN 0x00042e09 }
 procedure THauptschirm.FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043214 }
 procedure THauptschirm.eckimageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x0004324c }
 procedure THauptschirm.CloseBildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00043286 }
 procedure THauptschirm.CloseBildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000432c0 }
 procedure THauptschirm.KleinbildMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x000432fa }
 procedure THauptschirm.KleinbildMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
 end;

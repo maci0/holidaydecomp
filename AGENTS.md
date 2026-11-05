@@ -402,9 +402,14 @@ objects does not verify linked placement/data; these checks never earn STATUS.
   reference and rebuilt images; do not describe skipped checks as verified.
 - Never commit original game files, extracted forms/data, compiler binaries,
   raw dumps or old research archives. Reconstructed Pascal code is tracked;
-  extracted DATAVAL/POOLS/TABLES units and form resources remain local.
+  extracted DATAVAL/POOLS/TABLES units and compiled form resources remain local.
+- Track the asset-free form model and generated DFM snapshots in `src/main/forms`.
+- `docs/README.md` owns the knowledge-base map; link to topic owners instead of duplicating status.
+- The repository root is the Obsidian vault. Personal `.obsidian/` settings stay local.
+- Run `make docs-check` after documentation edits and `make forms` after form-model edits.
 - Keep `STATUS.md`, `status.json` and Rebrew metadata current.
 - `make clean` must preserve reconstructed source and metadata.
+- Delphi 1 rejects `//`; generate compatible brace address comments from managed bindings.
 - `tools/gen_tree.py` owns Pascal generation. Use `tools/patch_gen_tree.py` for
   anchored edits and `tools/regen_build_compare.py` for the locked build flow.
 - Preserve native stack slots, field widths, signedness, branches and near/far

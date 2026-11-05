@@ -665,6 +665,7 @@ Done:
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164786 }
 function Proc22_4786(Row, Col: Integer): Boolean;
 const
   AdjacentThreshold = $37;
@@ -716,6 +717,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00160130 }
 function Proc22_0130(A0, A1: Integer): Word;
 var
   R: Word;
@@ -746,6 +748,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0016069f }
 function Proc22_069F(X, Y: Word; B: Byte; var L: LongInt): Word;
 var
   Res: Word;
@@ -1009,6 +1012,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00160e0c }
 function Proc22_0E0C(A0, A1: Word): Word;
 var
   Flag: Word;
@@ -1204,6 +1208,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00161290 }
 function Proc22_1290(A0, A1: Word): Word;
 var
   R: Word;
@@ -1232,6 +1237,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00161907 }
 function Proc22_1907(X, Y: Word; B: Byte; var L: LongInt): Word;
 var
   Res: Word;
@@ -1459,6 +1465,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00162053 }
 function Proc22_2053(A0, A1: Word): Word;
 var
   Flag: Word;
@@ -1630,6 +1637,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001629c0 }
 procedure Proc22_29C0;
 var
   Count: Word;
@@ -1862,6 +1870,7 @@ procedure Far37C1(Arg: Word; P: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00162b9b }
 function Proc22_2B9B(X, Y, W: Integer; B: Byte; P: PLong22): Word;
 var
   Flag: Word;
@@ -1885,6 +1894,7 @@ begin
   Proc22_2B9B := Flag;
 end;
 
+{ ADDRESS: MAIN 0x00162c83 }
 function Proc22_2C83(X, Y, W: Integer; B: Byte; P: PLong22): Word;
 var
   Flag: Word;
@@ -1911,6 +1921,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00162d70 }
 function Proc22_2D70(X, Y, W: Integer): Word;
 var
   Flag: Word;
@@ -1930,6 +1941,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00162e03 }
 function Proc22_2E03(Y, X, W: Integer): Word;
 var
   Flag: Word;
@@ -1947,6 +1959,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00162e6f }
 function Proc22_2E6F(Y, X: Integer; Cell, B: Byte): Word;
 var
   R: Word;
@@ -1999,6 +2012,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00163030 }
 procedure Proc22_3030;
 var
   Col, Row: Byte;
@@ -2026,6 +2040,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00163199 }
 procedure Proc22_3199(X, Y: Byte);
 var
   R: Byte;
@@ -2074,6 +2089,7 @@ begin
   Far31E4 := 0;
 end;
 
+{ ADDRESS: MAIN 0x001633bc }
 procedure Proc22_33BC(A0, A1, A2, A3: Byte);
 label LoopTop, Done;
 var
@@ -2114,6 +2130,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0016354c }
 procedure Proc22_354C;
 label LoopTop, Done;
 var
@@ -2152,6 +2169,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0016371e }
 procedure Proc22_371E(var A, B: TCell22);
 var
   Temp: TCell22;
@@ -2163,6 +2181,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00163904 }
 procedure Proc22_3904(A0, A1, A2: Word);
 var
   C1: TCell22;
@@ -2303,6 +2322,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00163c5c }
 procedure Proc22_3C5C;
 type
   TRange4 = packed record
@@ -2356,6 +2376,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0016404c }
 procedure Proc22_404C(A0, A1, A2, A3, A4: Word);
 var
   Ext: LongInt;
@@ -2407,6 +2428,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0016412c }
 procedure Proc22_412C;
 begin
   Proc22_404C(125, 125,
@@ -2419,6 +2441,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001641b5 }
 procedure Proc22_41B5(N: Integer);
 var
   i: Word;
@@ -2453,6 +2476,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0016424f }
 procedure Proc22_424F(Col, Row: Word; P6, P4: Byte);
 var
   B1, B2, Result: Byte;
@@ -2752,6 +2776,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00164506 }
 function Proc22_4506(P: PCell22): Boolean;
 var
   Counter: Word;
@@ -2777,6 +2802,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164560 }
 procedure Proc22_4560(Dest: PCell22; Mode: Byte);
 begin
   case Mode of
@@ -2793,6 +2819,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x0016459a }
 function Proc22_459A(A0, A1: TCell22; A2: Byte): Word;
 var
   Res: Word;
@@ -2822,6 +2849,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164618 }
 function Proc22_4618(B: PCell22; A: PByte22): Word;
 var
   Temp: TCell22;
@@ -2850,6 +2878,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x0016470c }
 function Proc22_470C(X, Y: Integer): Word;
 begin
   Proc22_470C := Map0^[X - 1, Y] + Map0^[X, Y - 1] + Map0^[X, Y] +
@@ -2858,6 +2887,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001647ff }
 function Proc22_47FF(Row, Col: Integer): Word;
 var
   Count: Word;
@@ -2872,6 +2902,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001648d7 }
 function Proc22_48D7(Y, X: Integer; Mode: Byte): Byte;
 var
   M0: Word;
@@ -2988,6 +3019,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164a7d }
 function Proc22_4A7D(C: PCell22; B: PByte22): Word;
 var
   Cell: Byte;
@@ -3041,6 +3073,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164bea }
 function Proc22_4BEA(A: Byte): ShortInt;
 var
   Tmp: ShortInt;
@@ -3051,6 +3084,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00164cb1 }
 procedure Proc22_4CB1(C: TCell22; B: Byte);
 var
   R: Word;
@@ -3085,6 +3119,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00164d19 }
 procedure Proc22_4D19;
 var
   C: TCell22;
@@ -3115,6 +3150,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164d79 }
 procedure Proc22_4D79(N: Word);
 var
   i: Word;
@@ -3124,6 +3160,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00164dae }
 procedure Proc22_4DAE;
 label Body, Mid;
 var
@@ -3197,6 +3234,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00164fd1 }
 procedure Proc22_4FD1;
 var
   Val: Word;
@@ -3227,6 +3265,7 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001652a4 }
 procedure Proc22_52A4;
 var
   i1: Byte;
@@ -3267,6 +3306,7 @@ procedure Far550C(A0, A1, A2: Byte; A3: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001652d4 }
 procedure Proc22_52D4;
 begin
   if (PTRec6456(P6456)^.B190 <> 0) or (PTRec6456(P6456)^.B191 <> 0) then
@@ -3324,6 +3364,7 @@ procedure Far5677(A0: Pointer; A1: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x001653fe }
 function Proc22_53FE(Y, X: Integer; Dir, A: Byte): Byte;
 var
   Res: Byte;
@@ -3405,6 +3446,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001656ce }
 procedure Proc22_56CE;
 var
   EnclosingBuf: array[0..255] of Byte;
@@ -3457,6 +3499,7 @@ procedure Far56E6(A0: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00165788 }
 procedure Proc22_5788;
 begin
   GetMem(G71F2[0], 50);
@@ -3473,6 +3516,7 @@ begin
   Proc22_56CE;
 end;
 
+{ ADDRESS: MAIN 0x0016582a }
 procedure Proc22_582A;
 begin
   FreeMem(G71F2[0], 50);

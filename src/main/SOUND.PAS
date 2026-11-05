@@ -123,6 +123,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00140002 }
 function Proc20_0002(A0, A1, A2, A3: Word): Boolean;
 begin
   Proc20_0002 := (A1 = A3) and (A0 = A2);
@@ -130,11 +131,13 @@ end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00140026 }
 procedure Proc20_0026;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x001402ad }
 procedure Proc20_02AD(A0: Byte; A1, A2: Word);
 label Loop, Body, Next, Done;
 var
@@ -178,18 +181,22 @@ Next:
 Done:
 end;
 
+{ ADDRESS: MAIN 0x00140346 }
 procedure Proc20_0346;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001403ca }
 procedure Proc20_03CA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140691 }
 procedure Proc20_0691;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0014074d }
 procedure Proc20_074D;
 begin
 end;
@@ -202,6 +209,7 @@ procedure Far2DF2(A0: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140915 }
 procedure Proc20_0915;
 label Back, Body, Call2, Tail, Done;
 var
@@ -232,10 +240,12 @@ Tail:
 Done:
 end;
 
+{ ADDRESS: MAIN 0x001409ea }
 procedure Proc20_09EA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140b49 }
 procedure Proc20_0B49;
 begin
 end;
@@ -252,6 +262,7 @@ procedure Far2617(var A0);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140cce }
 procedure Proc20_0CCE;
 begin
   if G7054 <> 0 then
@@ -262,14 +273,17 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00140d09 }
 procedure Proc20_0D09;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140d1c }
 procedure Proc20_0D1C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140ddc }
 procedure Proc20_0DDC;
 begin
   if G7054 <> 0 then
@@ -280,14 +294,17 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x00140e17 }
 procedure Proc20_0E17;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140ec8 }
 procedure Proc20_0EC8;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140f6c }
 procedure Proc20_0F6C;
 begin
 end;
@@ -296,57 +313,68 @@ procedure Far19C(A0, A1, A2: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00140fec }
 procedure Proc20_0FEC;
 begin
   Far19C(G705C, G705A, $32);
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00141000 }
 procedure Proc20_1000;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001410c6 }
 procedure Proc20_10C6;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0014117e }
 procedure Proc20_117E;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001419d2 }
 procedure Proc20_19D2;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00141b31 }
 procedure Proc20_1B31;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x00141d5e }
 procedure Proc20_1D5E;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00141f65 }
 procedure Proc20_1F65;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0014232f }
 procedure Proc20_232F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001423c9 }
 procedure Proc20_23C9;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00142453 }
 procedure Proc20_2453;
 var R: Word;
 begin
@@ -359,14 +387,17 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x001424bc }
 procedure Proc20_24BC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00142518 }
 procedure Proc20_2518;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0014254f }
 procedure Proc20_254F;
 begin
   if (DataVal.Pair0060[2] <> 0) and not PWaveState20(@MAP.TileAnchorB)^.Active then
@@ -374,28 +405,34 @@ begin
       WaveMixActivate(PWaveState20(@MAP.TileAnchorB)^.MixSession, 1) = 0;
 end;
 
+{ ADDRESS: MAIN 0x00142577 }
 procedure Proc20_2577;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00142824 }
 procedure Proc20_2824;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00142f5e }
 procedure Proc20_2F5E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001430b6 }
 procedure Proc20_30B6;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00143145 }
 procedure Proc20_3145;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0014314c }
 procedure Proc20_314C;
 begin
 end;

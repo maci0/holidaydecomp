@@ -212,12 +212,14 @@ begin
   Past1 := R^.Field1F > 1;
 end;
 
+{ ADDRESS: MAIN 0x0018006b }
 function Proc24_006B(Y, X: SmallInt; var R: TRectState24): Boolean;
 begin
   Proc24_006B := (R.Valid <> 0) and (Y >= R.Top) and (X >= R.Left) and
                   (R.Top + R.Height >= Y) and (R.Left + R.Width >= X);
 end;
 
+{ ADDRESS: MAIN 0x00180409 }
 function Proc24_0409(var R: TRec409): Boolean;
 begin
   Proc24_0409 := (R.F1B > 0) and (R.F1B <= R.F1D);
@@ -309,191 +311,238 @@ begin
   New(P);
 end;
 
+{ ADDRESS: MAIN 0x00180002 }
 procedure Proc24_0002;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018003e }
 procedure Proc24_003E;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018004d }
 procedure Proc24_004D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018005c }
 procedure Proc24_005C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001800b3 }
 procedure Proc24_00B3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001800ba }
 procedure Proc24_00BA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001800e4 }
 procedure Proc24_00E4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180116 }
 procedure Proc24_0116;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018011d }
 procedure Proc24_011D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180181 }
 procedure Proc24_0181;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001801dc }
 procedure Proc24_01DC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001802a2 }
 procedure Proc24_02A2;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180316 }
 procedure Proc24_0316;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018039d }
 procedure Proc24_039D;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001803cc }
 function Proc24_03CC(A0: Pointer): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001803e7 }
 function Proc24_03E7(A0: Pointer): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180431 }
 function Proc24_0431(A0, A1: Word; A2: Byte; A3, A4: Word; var A5: TRectState24): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001804ed }
 procedure Proc24_04ED(A0: Pointer; var A1);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180552 }
 procedure Proc24_0552;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180559 }
 procedure Proc24_0559;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001805d6 }
 procedure Proc24_05D6;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180666 }
 function Proc24_0666(A0, A1: Word; A2, A3: Pointer): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001806c7 }
 procedure Proc24_06C7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001806fe }
 procedure Proc24_06FE(A0: LongInt; A1: Pointer);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180725 }
 procedure Proc24_0725;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018072c }
 procedure Proc24_072C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180797 }
 function Proc24_0797(A0, A1: Word; A2: Pointer; var A3): Byte;
 begin
   Proc24_0797 := 0;
 end;
 
+{ ADDRESS: MAIN 0x001807fa }
 procedure Proc24_07FA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018083b }
 procedure Proc24_083B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001808cb }
 procedure Proc24_08CB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180958 }
 procedure Proc24_0958;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180998 }
 procedure Proc24_0998;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001809eb }
 procedure Proc24_09EB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180aec }
 procedure Proc24_0AEC;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180e21 }
 procedure Proc24_0E21;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180f10 }
 procedure Proc24_0F10;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00180fe3 }
 procedure Proc24_0FE3;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001813b0 }
 procedure Proc24_13B0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001815f7 }
 procedure Proc24_15F7;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0018191b }
 procedure Proc24_191B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00181922 }
 procedure Proc24_1922;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00181929 }
 procedure Proc24_1929;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00181930 }
 procedure Proc24_1930;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001819c0 }
 procedure Proc24_19C0;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001819d7 }
 function Proc24_19D7(A0, A1, A2, A3: Word; var A4; var A5): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00181c1b }
 function Proc24_1C1B(A0, A1: Word; A2: Pointer; var A3; var A4: TRectState24): Boolean;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00181cc1 }
 procedure Proc24_1CC1(A0: ShortInt; var A1);
 type
   TR1C = packed record

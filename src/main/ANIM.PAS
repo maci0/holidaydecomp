@@ -93,10 +93,12 @@ implementation
 
 uses THINTERG, TDUMMYFO, GFX, DARSTELL, EREIGN, OBJEKT, SOUND, MAP, DataVal;
 
+{ ADDRESS: MAIN 0x00110002 }
 procedure Proc17_0002;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0011000c }
 function Proc17_000C(A0, A1: Word): Byte;
 var
   Spare: LongInt;              { declared and never used: the target's frame is 6, not 2 }
@@ -109,18 +111,22 @@ begin
   Far412B := 0;
 end;
 
+{ ADDRESS: MAIN 0x00110153 }
 procedure Proc17_0153;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00110324 }
 procedure Proc17_0324(A0, A1, A2: Word);
 begin
 end;
 
+{ ADDRESS: MAIN 0x00112c04 }
 procedure Proc17_2C04;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00112c3b }
 function Proc17_2C3B(A0, A1: Word): Boolean;
 var
   I: Integer;
@@ -149,6 +155,7 @@ begin
       end;
 end;
 
+{ ADDRESS: MAIN 0x00112d2a }
 function Proc17_2D2A(A0, A1: Word): Boolean;
 var
   I: Integer;
@@ -174,6 +181,7 @@ begin
       end;
 end;
 
+{ ADDRESS: MAIN 0x00112df2 }
 procedure Proc17_2DF2(A0: Word);
 type
   TSlotF2 = packed record
@@ -222,22 +230,26 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00113083 }
 procedure Proc17_3083;
 begin
 end;
 {$F+}
 
 {$F-}
+{ ADDRESS: MAIN 0x001130ba }
 procedure Proc17_30BA;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00113496 }
 procedure Proc17_3496;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00113727 }
 procedure Proc17_3727;
 var
   i, j: SmallInt;
@@ -259,6 +271,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0011385d }
 procedure Proc17_385D;
 var
   I: Word;
@@ -274,14 +287,17 @@ begin
   Proc17_3727;
 end;
 
+{ ADDRESS: MAIN 0x001138c4 }
 procedure Proc17_38C4;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00113a19 }
 procedure Proc17_3A19;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00114b93 }
 function Proc17_4B93(Col, Row: Word): Boolean;
 var
   I: Integer;
@@ -293,6 +309,7 @@ begin
       Proc17_4B93 := True;
 end;
 
+{ ADDRESS: MAIN 0x00114bfa }
 procedure Proc17_4BFA;
 begin
 end;
@@ -307,6 +324,7 @@ begin
   StubFFFF75E := 0;
 end;
 
+{ ADDRESS: MAIN 0x00114c27 }
 function Proc17_4C27(A0, A1: Word): Byte;
 begin
   if Far1AB3(A0, A1) then
@@ -315,23 +333,28 @@ begin
     Proc17_4C27 := 0;
 end;
 
+{ ADDRESS: MAIN 0x00114c55 }
 procedure Proc17_4C55;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00114e18 }
 function Proc17_4E18(A0: Byte; A1: Word): Boolean;
 begin
   Proc17_4E18 := False;
 end;
 
+{ ADDRESS: MAIN 0x00114f4f }
 procedure Proc17_4F4F;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00115386 }
 procedure Proc17_5386;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00115f3e }
 procedure Proc17_5F3E;
 begin
 end;
@@ -346,6 +369,7 @@ begin
   Far68F9 := 0;
 end;
 
+{ ADDRESS: MAIN 0x00116769 }
 procedure Proc17_6769(A0, A1, A2: Word);
 begin
   if Proc17_4E18(A2, A0) = False then
@@ -380,14 +404,17 @@ begin
   end;
 end;
 
+{ ADDRESS: MAIN 0x001168f1 }
 procedure Proc17_68F1;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00116975 }
 procedure Proc17_6975;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00116bac }
 procedure Proc17_6BAC(A0, A1, A2: SmallInt);
 type
   TSlotS17 = packed record
@@ -419,38 +446,46 @@ begin
       Proc17_2DF2(I);
 end;
 
+{ ADDRESS: MAIN 0x00116c5a }
 procedure Proc17_6C5A;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00116c8b }
 procedure Proc17_6C8B;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00116cba }
 procedure Proc17_6CBA;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00116ee7 }
 procedure Proc17_6EE7;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001170ab }
 procedure Proc17_70AB;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x001175de }
 procedure Proc17_75DE;
 begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00117a14 }
 procedure Proc17_7A14;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00117ee3 }
 procedure Proc17_7EE3;
 var
   I: Integer;
@@ -464,6 +499,7 @@ begin
     end;
 end;
 
+{ ADDRESS: MAIN 0x00117f4a }
 procedure Proc17_7F4A;
 var
   I: Integer;
@@ -477,6 +513,7 @@ begin
     end;
 end;
 
+{ ADDRESS: MAIN 0x00117fb1 }
 procedure Proc17_7FB1;
 begin
   Proc17_7A14;
@@ -510,27 +547,33 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x001180a7 }
 procedure Proc17_80A7;
 begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x0011868c }
 procedure Proc17_868C;
 begin
 end;
 
+{ ADDRESS: MAIN 0x001188bb }
 procedure Proc17_88BB;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00118950 }
 procedure Proc17_8950;
 begin
 end;
 
+{ ADDRESS: MAIN 0x00118a07 }
 procedure Proc17_8A07;
 begin
 end;
 
+{ ADDRESS: MAIN 0x0011571e }
 procedure Proc17_571E(Idx: Word);
 begin
   if MapTile1^[Slots^[Idx].W0, Slots^[Idx].W1] = PSlotArr22W(Slots)^[Idx].W18 then
@@ -541,6 +584,7 @@ begin
   MapTile2^[Slots^[Idx].W0, Slots^[Idx].W1] := $ff;
 end;
 
+{ ADDRESS: MAIN 0x00115e73 }
 procedure Proc17_5E73(Idx: Word);
 begin
   if MapTile1^[Slots^[Idx].W0, Slots^[Idx].W1] = $ff then
@@ -551,6 +595,7 @@ begin
     MapTile2^[Slots^[Idx].W0, Slots^[Idx].W1] := Slots^[Idx].B18;
 end;
 
+{ ADDRESS: MAIN 0x00115841 }
 procedure Proc17_5841(Idx: Word);
 begin
   case Table^[PSlotArrWA22(Slots)^[Idx].W18, PSlotArrWA22(Slots)^[Idx].W1A].B3 of
@@ -603,6 +648,7 @@ begin
 end;
 
 {$F-}
+{ ADDRESS: MAIN 0x00110025 }
 procedure Proc17_0025(Idx: Word; P26, P24, P22, P20, P1E, P1C: Word;
                P1A, P18, P16, P14: Byte; P12: Word; L10: LongInt;
                PC, PA, P8, P6, P4: Word);
@@ -627,6 +673,7 @@ begin
 end;
 {$F+}
 
+{ ADDRESS: MAIN 0x00114ae2 }
 function Proc17_4AE2(Col, Row, Kind, Unused: Word): Boolean;
 var
   J: Integer;
