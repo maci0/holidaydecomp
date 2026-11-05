@@ -133,7 +133,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "rebrew", url = "https://github.com/maci0/rebrew/releases/download/v6.16.0/rebrew-6.16.0-py3-none-any.whl" }]
+requires-dist = [{ name = "rebrew", url = "https://github.com/maci0/rebrew/releases/download/v6.20.0/rebrew-6.20.0-py3-none-any.whl" }]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ruff", specifier = "==0.16.9" }]
@@ -406,8 +406,8 @@ provides-extras = ["dev"]
 
 [[package]]
 name = "rebrew"
-version = "6.16.0"
-source = { url = "https://github.com/maci0/rebrew/releases/download/v6.16.0/rebrew-6.16.0-py3-none-any.whl" }
+version = "6.20.0"
+source = { url = "https://github.com/maci0/rebrew/releases/download/v6.20.0/rebrew-6.20.0-py3-none-any.whl" }
 dependencies = [
     { name = "capstone" },
     { name = "click" },
@@ -429,7 +429,7 @@ dependencies = [
     { name = "zstandard" },
 ]
 wheels = [
-    { url = "https://github.com/maci0/rebrew/releases/download/v6.16.0/rebrew-6.16.0-py3-none-any.whl", hash = "sha256:96a13f4229e29a195fba050d856789da6a50c7644fa60c30fbe251406ef92751" },
+    { url = "https://github.com/maci0/rebrew/releases/download/v6.20.0/rebrew-6.20.0-py3-none-any.whl", hash = "sha256:b300b6c34b734eeb0794b8bde5b960c87cac8e231026c0135e0b0b47e43f7286" },
 ]
 
 [package.metadata]

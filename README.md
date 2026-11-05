@@ -16,7 +16,7 @@ See [publication scope](PUBLICATION.md).
 
 ## Setup
 
-The tools use Python **3.15.1**, uv **0.12.13** and the pinned Rebrew **6.16.0**
+The tools use Python **3.15.2**, uv **0.13.6** and the pinned Rebrew **6.20.0**
 dependency. These are independent of the Python/web game clones in
 [`openholiday`](https://github.com/maci0/openholiday).
 
