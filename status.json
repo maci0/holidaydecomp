@@ -1,0 +1,335 @@
+{
+  "target": "main",
+  "source_sha256": "cff5b9352878ccaa8bc7dfcbac06bda4cf9e94c0ef30b364858e15fc17596a77",
+  "source_files": 28,
+  "procedures": {
+    "candidate": 358,
+    "empty_stub": 922,
+    "unbound": 24
+  },
+  "units": [
+    {
+      "file": "src/main/THINTERG.PAS",
+      "candidate": 11,
+      "empty_stub": 21
+    },
+    {
+      "file": "src/main/TDUMMYFO.PAS",
+      "candidate": 0,
+      "empty_stub": 1
+    },
+    {
+      "file": "src/main/ABRECHNE.PAS",
+      "candidate": 6,
+      "empty_stub": 37
+    },
+    {
+      "file": "src/main/DATEN.PAS",
+      "candidate": 13,
+      "empty_stub": 60
+    },
+    {
+      "file": "src/main/BAUFEN.PAS",
+      "candidate": 1,
+      "empty_stub": 59
+    },
+    {
+      "file": "src/main/DATWIN.PAS",
+      "candidate": 16,
+      "empty_stub": 72
+    },
+    {
+      "file": "src/main/AUKTION.PAS",
+      "candidate": 11,
+      "empty_stub": 45
+    },
+    {
+      "file": "src/main/GFX.PAS",
+      "candidate": 37,
+      "empty_stub": 54
+    },
+    {
+      "file": "src/main/KOMPASS.PAS",
+      "candidate": 11,
+      "empty_stub": 42
+    },
+    {
+      "file": "src/main/HIGHSCOR.PAS",
+      "candidate": 14,
+      "empty_stub": 57
+    },
+    {
+      "file": "src/main/HAUS.PAS",
+      "candidate": 6,
+      "empty_stub": 51
+    },
+    {
+      "file": "src/main/DARSTELL.PAS",
+      "candidate": 3,
+      "empty_stub": 35
+    },
+    {
+      "file": "src/main/START.PAS",
+      "candidate": 8,
+      "empty_stub": 30
+    },
+    {
+      "file": "src/main/OPTION.PAS",
+      "candidate": 6,
+      "empty_stub": 45
+    },
+    {
+      "file": "src/main/SCHLUSS.PAS",
+      "candidate": 14,
+      "empty_stub": 46
+    },
+    {
+      "file": "src/main/GELD.PAS",
+      "candidate": 23,
+      "empty_stub": 25
+    },
+    {
+      "file": "src/main/SEG15.PAS",
+      "candidate": 2,
+      "empty_stub": 40
+    },
+    {
+      "file": "src/main/MENU.PAS",
+      "candidate": 9,
+      "empty_stub": 24
+    },
+    {
+      "file": "src/main/ANIM.PAS",
+      "candidate": 19,
+      "empty_stub": 28
+    },
+    {
+      "file": "src/main/EREIGN.PAS",
+      "candidate": 4,
+      "empty_stub": 6
+    },
+    {
+      "file": "src/main/OBJEKT.PAS",
+      "candidate": 8,
+      "empty_stub": 7
+    },
+    {
+      "file": "src/main/SOUND.PAS",
+      "candidate": 8,
+      "empty_stub": 29
+    },
+    {
+      "file": "src/main/BAUEN.PAS",
+      "candidate": 14,
+      "empty_stub": 27
+    },
+    {
+      "file": "src/main/MAP.PAS",
+      "candidate": 44,
+      "empty_stub": 0
+    },
+    {
+      "file": "src/main/UEBERMAP.PAS",
+      "candidate": 66,
+      "empty_stub": 36
+    },
+    {
+      "file": "src/main/SEG24.PAS",
+      "candidate": 4,
+      "empty_stub": 45
+    }
+  ],
+  "measurement": {
+    "metric": "whole-file matching-window union",
+    "window": 16,
+    "covered_bytes": 286125,
+    "reference_bytes": 672992,
+    "same_offset_bytes": 14331,
+    "rebuilt_bytes": 620288,
+    "raw_exact": false,
+    "reference_sha256": "dfdfe07f7cc34cc1717c1a1419f2ab773a13d074e8bbcb0d33659c3e6575dd07",
+    "rebuilt_sha256": "d9783b7a359c46cca1bdc04ab72733e18f67edb25859444032bbc8e8b034c7a3",
+    "segments": [
+      {
+        "index": 0,
+        "bytes": 16333,
+        "covered_bytes": 4278
+      },
+      {
+        "index": 1,
+        "bytes": 22644,
+        "covered_bytes": 2077
+      },
+      {
+        "index": 2,
+        "bytes": 16195,
+        "covered_bytes": 2284
+      },
+      {
+        "index": 3,
+        "bytes": 16053,
+        "covered_bytes": 897
+      },
+      {
+        "index": 4,
+        "bytes": 16212,
+        "covered_bytes": 3821
+      },
+      {
+        "index": 5,
+        "bytes": 15943,
+        "covered_bytes": 579
+      },
+      {
+        "index": 6,
+        "bytes": 16269,
+        "covered_bytes": 6776
+      },
+      {
+        "index": 7,
+        "bytes": 16296,
+        "covered_bytes": 2612
+      },
+      {
+        "index": 8,
+        "bytes": 16070,
+        "covered_bytes": 3381
+      },
+      {
+        "index": 9,
+        "bytes": 16016,
+        "covered_bytes": 1806
+      },
+      {
+        "index": 10,
+        "bytes": 16036,
+        "covered_bytes": 3489
+      },
+      {
+        "index": 11,
+        "bytes": 17387,
+        "covered_bytes": 7562
+      },
+      {
+        "index": 12,
+        "bytes": 13272,
+        "covered_bytes": 6794
+      },
+      {
+        "index": 13,
+        "bytes": 13061,
+        "covered_bytes": 2101
+      },
+      {
+        "index": 14,
+        "bytes": 15560,
+        "covered_bytes": 3889
+      },
+      {
+        "index": 15,
+        "bytes": 13684,
+        "covered_bytes": 1652
+      },
+      {
+        "index": 16,
+        "bytes": 15517,
+        "covered_bytes": 3727
+      },
+      {
+        "index": 17,
+        "bytes": 35517,
+        "covered_bytes": 7118
+      },
+      {
+        "index": 18,
+        "bytes": 24990,
+        "covered_bytes": 3630
+      },
+      {
+        "index": 19,
+        "bytes": 14811,
+        "covered_bytes": 3295
+      },
+      {
+        "index": 20,
+        "bytes": 12626,
+        "covered_bytes": 2205
+      },
+      {
+        "index": 21,
+        "bytes": 15314,
+        "covered_bytes": 3290
+      },
+      {
+        "index": 22,
+        "bytes": 22740,
+        "covered_bytes": 14638
+      },
+      {
+        "index": 23,
+        "bytes": 21383,
+        "covered_bytes": 11954
+      },
+      {
+        "index": 24,
+        "bytes": 7430,
+        "covered_bytes": 729
+      },
+      {
+        "index": 25,
+        "bytes": 12533,
+        "covered_bytes": 10379
+      },
+      {
+        "index": 26,
+        "bytes": 16262,
+        "covered_bytes": 9567
+      },
+      {
+        "index": 27,
+        "bytes": 14990,
+        "covered_bytes": 10106
+      },
+      {
+        "index": 28,
+        "bytes": 28229,
+        "covered_bytes": 18350
+      },
+      {
+        "index": 29,
+        "bytes": 28416,
+        "covered_bytes": 21110
+      },
+      {
+        "index": 30,
+        "bytes": 31436,
+        "covered_bytes": 21054
+      },
+      {
+        "index": 31,
+        "bytes": 20662,
+        "covered_bytes": 14446
+      },
+      {
+        "index": 32,
+        "bytes": 12019,
+        "covered_bytes": 9166
+      },
+      {
+        "index": 33,
+        "bytes": 9404,
+        "covered_bytes": 6548
+      },
+      {
+        "index": 34,
+        "bytes": 11641,
+        "covered_bytes": 11641
+      },
+      {
+        "index": -1,
+        "bytes": 43643,
+        "covered_bytes": 43529
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+---
+name: rebrew-init
+description: >-
+  Set up a new Rebrew project with rebrew init (scaffold, first setup, new
+  project): choose target names and compiler profiles, and check scaffold
+  drift. Use rebrew-intake for one-shot binary onboarding and
+  rebrew-workflow for an existing target.
+license: MIT
+---
+
+# Rebrew Init
+
+Scaffold a new rebrew project from an empty directory and a target binary.
+
+## When NOT to use this skill
+
+- One-shot binary onboard (`rebrew intake <binary>`) → use `rebrew-intake`
+- Day-to-day reversing → use `rebrew-workflow`
+- Deep matching → use `rebrew-matching`
+
+Use when the user needs scaffold decisions (name, profile). Prefer `rebrew intake`
+for "here's a binary, set it up". `rebrew-init` names this skill; the executable
+is `rebrew`, with `init` as a subcommand. Re-run `rebrew init --refresh-agents` to
+re-render the scaffold after template changes.
+
+## Scaffold
+
+Run from the project root directory:
+
+```bash
+mkdir -p original && cp /path/to/<binary> original/
+rebrew init --target <name> --binary <filename> --guess-compiler --no-wizard
+```
+
+Target naming: bare binary stem, no extension (`server.dll` → `server`, `game.exe` → `game`; lowercased, non-alnum → `_`), and a name becomes a path component, so no separators. With `--no-wizard` nothing derives it: `--target` defaults to `main` and you must pass the name. The wizard prompt and `rebrew intake` default to the binary stem. Override with `--target` when existing MODULE keys already use a different form (e.g. legacy `server.dll`). Paths are `layout/main/`, `src/main/`.
+
+Starting from a splat YAML instead of a bare binary:
+`rebrew source import-splat <config>` plans names, layout, and dedicated metadata, and writes
+nothing until `--apply` (`--force` replaces conflicting metadata entries).
+
+## Profile selection
+
+`--guess-compiler` detects from the binary (diec → PDB → heuristics) and is
+right for standard builds. Override with `--toolchain <profile>` when:
+
+- The binary is a rebuild or repack whose headers lie (guess follows the
+  headers, not the codegen).
+- You already know the exact toolchain (matching SP-level profile matters:
+  `msvc-6.0-sp6` vs `msvc-6.0` is a different code generator).
+- 16-bit DOS/NE binaries where the heuristic prefers wrong: use
+  `watcom-2.0-win16` for Open Watcom 2.0 wcc, `msvc-1.52` for MSVC 1.52
+  (16-bit DOSBox), `borland-3.1` for Turbo C++ 3.1. List shipped profiles
+  with `rebrew toolchain list`.
+
+```bash
+rebrew init --target <name> --binary <filename> --toolchain <profile> --no-wizard
+```
+
+## Done-gate
+
+```bash
+rebrew doctor
+```
+
+Run it right after `rebrew init`. Doctor must report healthy
+(warnings for unconfigured optionals such as FLIRT, Ghidra, BinSync are fine;
+failures are not) before handing off. The commonest failure is the toolchain
+image missing: run `rebrew toolchain pull <profile>` (a docker image pull).
+`rebrew toolchain build <profile>` compiles the image from the sibling
+recompile-toolchains checkout, which is a long job and fails without that
+checkout. Use a pull for setup; build when the task calls for building the image
+or the user has already authorized it. Otherwise clarify before a long build.
+
+## Scaffold drift check
+
+`rebrew init` renders AGENTS.md, PRINCIPLES.md, and the packaged skills (plus
+any `REBREW_SKILLS_DIR` overlay) into `.agents/skills/`, substituting the
+target name. Run `rebrew init --check` to report drift in any of them; it exits
+1 when a rendered file differs from the packaged source, so it is the check to
+run rather than comparing the tree by hand.
+
+## Global organization
+
+Organize game and CRT extern declarations separately, with one canonical header
+per subsystem and one CRT header. Headers do not allocate storage; definitions
+belong to one source owner or linked stock library member. A section range is not
+subsystem ownership. Preserve an existing curated split when refreshing scaffolds
+or generating headers; use `rebrew-data-analysis` for consolidation.
+
+## Handoff
+
+Scaffold done → `rebrew-intake` owns the binary from here (FLIRT scan,
+catalog, triage). The handoff is one line: the target name and profile.
+
+## Refresh after consolidation
+
+Before refresh, retain local rules below the project-rules marker documented in
+AGENTS.md. `--refresh-agents` uses the configured default target and its compiler
+override. Check editable dependency origins and canonical Rebrew/Recoverage
+checkout paths, then run `rebrew init --check`. Delphi scaffolds use whole-program
+Docker build, NE comparison and form inspection instead of the C function loop.
+
+Target namespaces use `[targets.<name>].module` and `rebrew cfg set module NAME`.
+Retain existing values when renaming the removed `marker` key. Source comments
+are optional `ADDRESS` anchors; function/data kinds and state belong in metadata.

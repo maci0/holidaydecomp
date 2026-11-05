@@ -1,0 +1,26 @@
+{
+  "files": {
+    ".agents/skills/rebrew-data-analysis/SKILL.md": "5c0f297a52bbc6d098b292ab63f9523db100b67061b28599e59128c5981286c5",
+    ".agents/skills/rebrew-data-analysis/references/global-ownership.md": "94da6fe54fd8105702cdab0bdbe1f870368c3141070e235b3a886286cbeaa446",
+    ".agents/skills/rebrew-data-analysis/references/json-and-failures.md": "5b3409237f3a6542a0f32c4d13f5dcd987de5a9efddc57b11112c8b181cb813d",
+    ".agents/skills/rebrew-data-analysis/references/link-fingerprints.md": "4c2cd05bd3c8b82e7672ac3e84df3c00ae73251090ab5661e24854c3c6ebe0f1",
+    ".agents/skills/rebrew-ghidra-sync/SKILL.md": "3b5670e34a70374069f024a6ce61852fd46d2f8092e8d577d9243afacb75407b",
+    ".agents/skills/rebrew-ghidra-sync/references/state-repo.md": "d807286213be8f8e713819f531b75aeb3333ac4a8fb414bd90ada3989f6b9b4e",
+    ".agents/skills/rebrew-init/SKILL.md": "83015e6514370289fedb9407eef852eb93b6496929e653f57bcac37d70156d46",
+    ".agents/skills/rebrew-intake/SKILL.md": "aeb1de3dd267500c28cd6da143037ffc1f0cd42a77fa9e49bce4acceb59bafdb",
+    ".agents/skills/rebrew-intake/references/binary-recon.md": "08fbb58864afeac859e6277dc48f9ffa83285d2790b9054b76918005a556dca5",
+    ".agents/skills/rebrew-intake/references/toolchain-id.md": "dc1b385ef7d2e7f37dcefbd3b4ad6f1ce8d8c5356d2821314553a0468ae555e4",
+    ".agents/skills/rebrew-matching/SKILL.md": "9112ff6155934715007f4214d0cecbea0835444d0e97c13700b94759ea722f26",
+    ".agents/skills/rebrew-matching/references/codegen-hints.md": "e014874a078956374ce7d2ca443bf96917fc67ad048264a435fbc161de7edf18",
+    ".agents/skills/rebrew-matching/references/flag-sweep.md": "bab7c3a83db84766724e5eb49981c418d8fddd962e08a112260e195412f69aec",
+    ".agents/skills/rebrew-matching/references/prove.md": "6051ecd4687068096a42a50d5e850d71fdc2f19dbe1c549e2a0012bf1b48c437",
+    ".agents/skills/rebrew-workflow/SKILL.md": "dcfdf6a849ae995be19b310d7618c41744585dfade43a0f0822943e3b2415663",
+    ".agents/skills/rebrew-workflow/references/advanced-commands.md": "8a53b803fa99dfd54dc9e41f106db9cbc9b24af97a86598a67b09cd4c70c82f5",
+    ".agents/skills/rebrew-workflow/references/annotation-format.md": "6d3a0e131856dd8676b9a6c9329c4c1b073ca77b2e343e12a43b45062e85a139",
+    ".agents/skills/rebrew-workflow/references/file-organization.md": "a01d107a0ba0d06e1676bbf0cf6684e201c04a69d4e5f2bc96c8699afb4df2de",
+    ".agents/skills/rebrew-workflow/references/round-trip.md": "d733668a226648dd066c39b5d2201ec46b06d751553e9d16640c14097058afa5",
+    ".agents/skills/rebrew-workflow/references/tool-selection.md": "5463f7ad680cf430acfefce5253c97c9960837ee59a548d10d6d4a6eb84de27f",
+    ".agents/skills/rebrew-workflow/references/verify-and-progress.md": "6962bd5661361702910f936f4a70b345baa090a4a210086e0c575762ff05d7ea"
+  },
+  "version": 1
+}

@@ -1,0 +1,323 @@
+{
+  "target": "main",
+  "format": "ne",
+  "reference_sha256": "dfdfe07f7cc34cc1717c1a1419f2ab773a13d074e8bbcb0d33659c3e6575dd07",
+  "address_encoding": "zero-based segment * 0x10000 + offset",
+  "segments": [
+    {
+      "index": 1,
+      "file_offset": 184656,
+      "bytes": 16333,
+      "min_allocation": 16334,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 2,
+      "file_offset": 201280,
+      "bytes": 22644,
+      "min_allocation": 22644,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 3,
+      "file_offset": 224064,
+      "bytes": 16195,
+      "min_allocation": 16196,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 4,
+      "file_offset": 240480,
+      "bytes": 16053,
+      "min_allocation": 16054,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 5,
+      "file_offset": 256688,
+      "bytes": 16212,
+      "min_allocation": 16213,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 6,
+      "file_offset": 273120,
+      "bytes": 15943,
+      "min_allocation": 15944,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 7,
+      "file_offset": 289264,
+      "bytes": 16269,
+      "min_allocation": 16270,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 8,
+      "file_offset": 305760,
+      "bytes": 16296,
+      "min_allocation": 16297,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 9,
+      "file_offset": 322224,
+      "bytes": 16070,
+      "min_allocation": 16071,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 10,
+      "file_offset": 338432,
+      "bytes": 16016,
+      "min_allocation": 16017,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 11,
+      "file_offset": 354768,
+      "bytes": 16036,
+      "min_allocation": 16036,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 12,
+      "file_offset": 370992,
+      "bytes": 17387,
+      "min_allocation": 17388,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 13,
+      "file_offset": 388480,
+      "bytes": 13272,
+      "min_allocation": 13273,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 14,
+      "file_offset": 401904,
+      "bytes": 13061,
+      "min_allocation": 13062,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 15,
+      "file_offset": 415120,
+      "bytes": 15560,
+      "min_allocation": 15561,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 16,
+      "file_offset": 431360,
+      "bytes": 13684,
+      "min_allocation": 13685,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 17,
+      "file_offset": 445248,
+      "bytes": 15517,
+      "min_allocation": 15518,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 18,
+      "file_offset": 460928,
+      "bytes": 35517,
+      "min_allocation": 35518,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 19,
+      "file_offset": 496560,
+      "bytes": 24990,
+      "min_allocation": 24990,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 20,
+      "file_offset": 521648,
+      "bytes": 14811,
+      "min_allocation": 14812,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 21,
+      "file_offset": 536512,
+      "bytes": 12626,
+      "min_allocation": 12627,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 22,
+      "file_offset": 549392,
+      "bytes": 15314,
+      "min_allocation": 15314,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 23,
+      "file_offset": 564784,
+      "bytes": 22740,
+      "min_allocation": 22740,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 24,
+      "file_offset": 587840,
+      "bytes": 21383,
+      "min_allocation": 21384,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 25,
+      "file_offset": 609344,
+      "bytes": 7430,
+      "min_allocation": 7431,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 26,
+      "file_offset": 616816,
+      "bytes": 12533,
+      "min_allocation": 12534,
+      "flags": 7440,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 27,
+      "file_offset": 2816,
+      "bytes": 16262,
+      "min_allocation": 16263,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 28,
+      "file_offset": 19264,
+      "bytes": 14990,
+      "min_allocation": 14990,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 29,
+      "file_offset": 34448,
+      "bytes": 28229,
+      "min_allocation": 28229,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 30,
+      "file_offset": 63248,
+      "bytes": 28416,
+      "min_allocation": 28416,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 31,
+      "file_offset": 92288,
+      "bytes": 31436,
+      "min_allocation": 31437,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 32,
+      "file_offset": 124528,
+      "bytes": 20662,
+      "min_allocation": 20662,
+      "flags": 7504,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 33,
+      "file_offset": 145392,
+      "bytes": 12019,
+      "min_allocation": 12019,
+      "flags": 3408,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 34,
+      "file_offset": 158016,
+      "bytes": 9404,
+      "min_allocation": 9404,
+      "flags": 3408,
+      "code": false,
+      "on_disk": true
+    },
+    {
+      "index": 35,
+      "file_offset": 168784,
+      "bytes": 11641,
+      "min_allocation": 30598,
+      "flags": 3417,
+      "code": false,
+      "on_disk": true
+    }
+  ]
+}

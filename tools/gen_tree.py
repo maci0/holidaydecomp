@@ -20596,9 +20596,9 @@ def unit_source(
         rest = header_line
         while len(rest) > 100:
             cut = rest.rfind(" ", 0, 100)
-            wrapped.append(rest[:cut])
+            wrapped.append(rest[:cut].rstrip())
             rest = "  " + rest[cut + 1:]
-        wrapped.append(rest)
+        wrapped.append(rest.rstrip())
     return (
         f"unit {name};\n"
         + "\n".join(wrapped) + "\n"

@@ -1,16 +1,17 @@
 # Changelog
 
+## 0.1.2 — 2026-11-05
+
+- Restore the reconstructed Pascal units and Delphi project to Git.
+- Preserve reconstructed source during cleanup.
+- Add managed Rebrew function/data stores, NE segment metadata and the standard Delphi project instructions.
+- Add a decompilation tracker separating candidates, empty stubs, unbound procedures and measured byte overlap.
+- Remove publication-specific documentation and checks.
+
 ## 0.1.1 — 2026-11-05
 
-- Ignore annotated tag names when auditing historical file paths; continue rejecting removed assets in history.
+- Fix handling of annotated release tags in repository checks.
 
 ## 0.1.0 — 2026-11-05
 
-- Initial source-only release of the Win16 analysis and Pascal generation tools.
-- Consolidated selected rendering, scrolling, overview, form, callback, keyboard
-  and audio reconstruction logic with reference-dependent integration checks.
-- Added a publication audit, reproducible local generation commands and source
-  tests that do not require original game assets.
-- Added an original tropical-island project logo.
-- Excluded original assets, generated resource/data copies, raw research dumps,
-  prior history and three inline-assembly experiments from publication.
+- Initial analysis tooling, Pascal generator and original project logo.

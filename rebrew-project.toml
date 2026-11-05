@@ -16,7 +16,7 @@ format = "ne"
 arch = "x86_16"
 reversed_dir = "src/main"
 bin_dir = "bin/main"
-source_ext = ".PAS,.pas"
+source_ext = ".PAS,.pas,.DPR,.dpr"
 module = "MAIN"
 
 [compiler]
@@ -30,5 +30,5 @@ module = "MAIN"
 # container budget is 300, so the project matches it.
 timeout = 300
 profile = "delphi-1.0"
-cflags = ""
+cflags = "-$S-"
 base_cflags = ""

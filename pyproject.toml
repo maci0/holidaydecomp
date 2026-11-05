@@ -1,6 +1,6 @@
 [project]
 name = "holidaydecomp"
-version = "0.1.1"
+version = "0.1.2"
 requires-python = ">=3.15"
 dependencies = [
     "rebrew==6.20.0",

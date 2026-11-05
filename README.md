@@ -4,58 +4,61 @@
 
 # holidaydecomp
 
-Experimental source reconstruction and analysis tools for the Windows 3.1
-version of **Holiday Island**. This repository contains newly written tooling,
-Pascal generation logic, an authored library-reach template and technical inventories. It is not a playable remake
-or a complete, byte-identical reconstruction.
+Reconstructed Delphi 1 / Win16 source and analysis tools for **Holiday Island**.
+The Pascal units and project file are checked into [src/main](src/main).
+The reconstruction is incomplete; many routines are empty stubs or unverified candidates.
 
-**No original game executable, artwork, audio, extracted text/data, form
-resources or compiler binaries are distributed here.** The project logo is
-original artwork. The repository starts with a fresh source-only history.
-See [publication scope](PUBLICATION.md).
+**[Decompilation status](STATUS.md)** · [Machine-readable tracker](status.json)
 
-## Setup
+Original game executables, media, extracted strings/data, form resources and compiler files are not included. Supply your own local inputs to build.
 
-The tools use Python **3.15.2**, uv **0.13.6** and the pinned Rebrew **6.20.0**
-dependency. These are independent of the Python/web game clones in
-[`openholiday`](https://github.com/maci0/openholiday).
+## Project layout
+
+- `src/main/HOLIDAY.DPR` and `src/main/*.PAS`: reconstructed program, code units and compiler-reach support.
+- `src/main/function_structure.json`: native procedure inventory.
+- `rebrew-project.toml`: target `main`, module `MAIN`, NE / x86_16, Delphi 1 toolchain.
+- `rebrew-functions.toml`: native addresses, sizes, source bindings and notes, maintained through Rebrew's managed API.
+- `rebrew-data.toml`: data metadata registry; reviewed global ownership still needs migration.
+- `layout/main`: NE segment metadata and the whole-program build convention.
+- `STATUS.md` / `status.json`: candidates, empty stubs, unbound procedures and the latest source-hashed build measurement.
+- `original/`: your local reference input, ignored except for its README.
+- `tools/`: source generators, native analysis and checks.
+
+## Setup and checks
+
+Use Python **3.15.2**, uv **0.13.6** and the pinned Rebrew **6.20.0**.
+This project is independent of the Python/web clones in [openholiday](https://github.com/maci0/openholiday).
 
 ```sh
 uv sync --frozen
 make check
+uv run --frozen rebrew status --json
 ```
 
-Source tests run without the game. Native integration checks skip when the local
-reference or rebuilt executable is absent; passing source tests does not prove
-native behavior or binary equality.
+Source checks run without the game. Native integration checks skip when the reference or rebuilt executable is absent. Rebrew's source coverage includes empty stubs and is not a completion percentage.
 
-## Local reconstruction
+## Build and update progress
 
-Supply your own reference at `original/holiday.exe` and configure the stock
-Delphi 1 toolchain for Rebrew. Those inputs remain local and ignored by Git.
+Place your reference at `original/holiday.exe` and configure the stock Delphi 1 toolchain for Rebrew.
 
 ```sh
-make generate       # derive local forms, data units and Pascal sources
-make build          # compile with stock Delphi 1 and stack checking disabled
-make compare        # report complete-file agreement and content overlap
+make generate       # regenerate code snapshots and local resources/data
+make metadata       # refresh native-to-source bindings through Rebrew
+make build          # compile the complete Delphi project with -$S-
+make compare        # report NE file agreement and content overlap
+make status-measure # save the current build measurement and refresh the tracker
+make check
 ```
 
-Generated forms, data, resources, source copies and executables are local build
-outputs. They must not be committed. `make clean` removes generated output and
-project caches while retaining the local reference and toolchain.
+`tools/gen_tree.py` owns reconstructed code generation. Change it, regenerate, and commit both the generator and changed Pascal units. `tools/patch_gen_tree.py` supports anchored generator edits. `tools/regen_build_compare.py` serializes generation/build/comparison under the project lock.
 
-`tools/gen_tree.py` is the source of truth for reconstruction changes.
-`tools/patch_gen_tree.py` applies anchored proposals; generated Pascal files are
-not edited by hand. `tools/regen_build_compare.py` serializes generation, build
-and comparison under the project lock.
+Extracted `DATAVAL.PAS`, `POOLS.PAS`, `TABLES.PAS`, form streams, `HOLIDAY.RES` and compiled executables stay local and ignored. `make clean` removes these outputs and caches while preserving reconstructed source, metadata and the status tracker.
 
-The recovered logic covers selected rendering, scrolling, overview, form,
-callback, keyboard and audio paths. Many game routines remain stubs. Private
-names, field views and argument types remain proposals wherever the native
-evidence does not establish a unique original spelling. Three inline-assembly
-experiments are excluded from this high-level source export.
+`make status` refreshes source counts without building. A stored measurement is retained only while its source/input fingerprint matches; it is content overlap, including libraries/data/resources, **not a percentage decompiled**. Per-function EXACT/RELOC verdicts remain unset until verified through the matching workflow.
+
+See [layout/main](layout/main) for NE address conventions and the limitation of Rebrew's PE layout scaffolder.
 
 ## Release
 
-Current release: **v0.1.1**. See [CHANGELOG.md](CHANGELOG.md).
-This is a research toolkit; there is no production service to deploy.
+Current release: **v0.1.2**. See [CHANGELOG.md](CHANGELOG.md).
+Full gameplay parity remains unverified. There is no production service to deploy.
