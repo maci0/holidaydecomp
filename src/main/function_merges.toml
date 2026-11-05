@@ -1,0 +1,36 @@
+# Reviewed extent repairs, replayed by tools/gen_functions_json.py on every
+# inventory regeneration.  `rebrew binary repair-extents --merge <head>=<tail>`
+# applied each one; without this file the next regeneration restores the
+# discovered sizes and the review is lost (round 715 wiped two merges).
+#
+# Append a [[merge]] block when a repair-extents merge lands: head and tail are
+# the hex addresses, old_size the head's discovered size, new_size the size
+# after the fold (tail_va + tail_size - head_va), changed_at when the block was
+# recorded, reason naming the command and the receipt file.
+
+[[merge]]
+head = "0x000a0e68"
+tail = "0x000a1e9e"
+old_size = 4150
+new_size = 4943
+changed_at = "2026-11-01T05:07:55+00:00"
+reason = "recorded from the round-714 application of repair-extents --merge 0xa0e68=0xa1e9e on 2026-10-31; receipt .scratch/decode-10-0x0e68-outline.md (Proc10_1E9E's 793 bytes are the tail of Proc10_0E68)"
+
+[[merge]]
+head = "0x001729a2"
+tail = "0x00172dd3"
+old_size = 1073
+new_size = 1119
+changed_at = "2026-11-01T05:07:55+00:00"
+reason = "recorded from the round-714 application of repair-extents --merge 0x1729a2=0x172dd3 on 2026-10-31; receipt .scratch/decode-23-29a2.md (46-byte tail)"
+
+# A pure end-correction is a [[span]] block: one row's own extent, no tail
+# to absorb, the command `rebrew binary repair-extents 0xVA=SIZE`. Same
+# fields, and the replayed event carries no `merged` key because nothing
+# was folded into the row.
+[[span]]
+va = "0x000e3bf8"
+old_size = 208
+new_size = 209
+changed_at = "2026-11-01T08:16:58+00:00"
+reason = "seg13-15 patch29: retf 8 at 0x3cc6 is ca 08 00, three bytes, so the body ends at 0x3cc9 = 209 bytes where the prologue table reads 208; no tail, a pure end-correction. Its last byte sits in segment 15's zero-filled virtual tail (raw_size 15560), which is why repair-extents' file-backed complete_span refuses 0x000e3bf8=209 and the store is this case's record"

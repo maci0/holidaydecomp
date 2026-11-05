@@ -1,0 +1,34 @@
+# rebrew project configuration — Holiday Island (holiday.exe), 16-bit NE.
+#
+# The target is a Delphi 1.0 (Win 3.1, DOS-extended) NE executable.  The
+# compilation unit is the whole program (src/main/HOLIDAY.DPR), not one C
+# function: DCC links the VCL units into the image, so per-function C->OBJ
+# matching has no meaning here (rebrew ADR-001, notes.txt).
+
+[project]
+name = "holidaydecomp"
+default_target = "main"
+output_dir = "output"
+
+[targets.main]
+binary = "original/holiday.exe"
+format = "ne"
+arch = "x86_16"
+reversed_dir = "src/main"
+bin_dir = "bin/main"
+source_ext = ".PAS,.pas"
+module = "MAIN"
+
+[compiler]
+# `delphi-1.0` is the rebrew toolchain name for Delphi 1.0 / 16-bit NE.
+# The old value here (`delphi16`) is not a rebrew toolchain, so every
+# `rebrew` command resolved no compiler at all.
+# The default `compile_timeout` is 60 seconds, measured with the
+# container already booting; on a loaded host the boot alone can eat
+# it (rounds 532-533, eight consecutive `timed out after 60 seconds`
+# failures while the dcc step itself needs 1.4s). The toolchain's own
+# container budget is 300, so the project matches it.
+timeout = 300
+profile = "delphi-1.0"
+cflags = ""
+base_cflags = ""
