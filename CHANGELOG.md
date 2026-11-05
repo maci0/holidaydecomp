@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 — 2026-11-05
+
+- Ignore annotated tag names when auditing historical file paths; continue rejecting removed assets in history.
+
 ## 0.1.0 — 2026-11-05
 
 - Initial source-only release of the Win16 analysis and Pascal generation tools.

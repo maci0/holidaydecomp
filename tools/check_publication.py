@@ -35,8 +35,14 @@ def main() -> int:
         return 1
     failures = [f"excluded path: {path}" for path in paths if not permitted(path)]
     history = subprocess.check_output(["git", "rev-list", "--objects", "--all"], cwd=ROOT).decode()
-    for line in history.splitlines():
-        _, _, path = line.partition(" ")
+    typed = subprocess.check_output(
+        ["git", "cat-file", "--batch-check=%(objecttype) %(rest)"],
+        input=history.encode(), cwd=ROOT,
+    ).decode()
+    for line in typed.splitlines():
+        kind, _, path = line.partition(" ")
+        if kind not in {"blob", "tree"}:
+            continue
         if path and path not in {"assets", "src", "src/main", "tools", "templates", ".github", ".github/workflows"} and not permitted(path):
             failures.append(f"excluded historical path: {path}")
     for path in paths:

@@ -57,5 +57,5 @@ experiments are excluded from this high-level source export.
 
 ## Release
 
-Current release: **v0.1.0**. See [CHANGELOG.md](CHANGELOG.md).
+Current release: **v0.1.1**. See [CHANGELOG.md](CHANGELOG.md).
 This is a research toolkit; there is no production service to deploy.
